@@ -1,4 +1,10 @@
-<h1> EpiTrac </h1>
+<h1 align= "center" > EpiTrac </h1>
 
-<%= button_to "Login", "/login", method: :get %>
-<%= button_to "Create User", "users/new", method: 'get' %>
+<div align= "left">
+    <%= button_to "Login", "/login", method: :get %>
+    <%= button_to "Create User", "users/new", method: 'get' %>
+</div>
+
+<div align= "right">
+    <%= link_to "About", "/about", method: :get %>
+</div>

@@ -11,11 +11,22 @@ RSpec.describe 'application landing page' do
     end
 
 
-    it  "has a create user button " do
+    xit  "has a create user button " do
         expect(page).to have_button("Create User")
         click_on "Create User"
         expect(current_path).to eq("/users/#{@user_1.id}")
         #madeline is working on the creating new user story, so left pathing unfinished
     end
 
+    it  "has a login button " do
+        expect(page).to have_button("Login")
+        click_on "Login"
+        expect(current_path).to eq("/login")
+    end
+
+     it "has a link to about page " do
+        expect(page).to have_link("About")
+        click_on "About"
+        expect(current_path).to eq("/about")
+    end
 end

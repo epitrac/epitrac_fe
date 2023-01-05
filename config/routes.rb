@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root 'landing#index'
   get '/login', to: "users#login_form"
   post '/login', to: "users#login_user"
+  get '/about', to: "abouts#index"
   resources :users
 end
