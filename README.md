@@ -1,24 +1,80 @@
-# README
+<div align="center">
+  <h1>Epitrac</h1>
+  <h1>-WIP-</h1>
+</div>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Learning Goals](#learning-goals)
+- [Setup](#setup)
+- [Contributors](#contributors)
+- [Gems](#gems)
 
-Things you may want to cover:
 
-* Ruby version
+## Project Overview
+Epitrac is an application that aims to solve the problem of the general public not having user-friendly access to epidemiological data by creating a user friendly interactive map to display weekly disease cases and view disease related articles.
 
-* System dependencies
+This repo is the Front End part of a project built by students at [Turing School of Software and Design](https://turing.edu/). You can find the Back End repo [HERE](https://github.com/epitrac/epitrac_be).
 
-* Configuration
 
-* Database creation
+## Learning Goals
+[Project Spec](https://backend.turing.edu/module3/projects/consultancy/)
 
-* Database initialization
+This project's goal is creating a successful web application from a student-led project idea, focusing on Service-Oriented Architecture with a separate front and back end.
+The front-end handles authentication via OAuth.
 
-* How to run the test suite
+## Setup
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Clone the repository
+2. cd into the root directory
+3. Install gem packages: `bundle install`
+4. Setup the database: `rails db:create`
 
-* Deployment instructions
+## Contributors
+<table>
+  <tr>
+    <td>Shawn Lee</td>
+    <td>Madeline Mauser</td>
+    <td>Emily Port</td>
+    <td>Darby Smith</td>
+    <td>William Wang</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/Shawnl93">GitHub</a><br>
+      <a href="https://www.linkedin.com/in/shawn-lee-3382aa8b/">LinkedIn</a>
+    </td>
+    <td>
+      <a href="https://github.com/MadelineMauser">GitHub</a><br>
+      <a href="https://www.linkedin.com/in/madeline-mauser-644239245/">LinkedIn</a>
+    </td>
+    <td>
+      <a href="https://github.com/eport01">GitHub</a><br>
+      <a href="https://www.linkedin.com/in/emily-port-3ab6389b/">LinkedIn</a>
+    </td>
+    <td>
+    <a href="https://github.com/DarbySmith">GitHub</a><br>
+    <a href="https://www.linkedin.com/in/darby-m-smith/">LinkedIn</a>
+    </td>
+    <td>
+      <a href="https://github.com/willjw2">GitHub</a><br>
+      <a href="https://www.linkedin.com/in/william-wang-814442240/">LinkedIn</a>
+    </td>
+  </tr>
+</table>
 
-* ...
+## Gems
+- Pry
+- rspec
+- capybara
+- simplecov
+- shoulda-matchers
+- webmock
+- vcr
+- faraday
+- faker
+- factorybot
+
+## Known Issues/Future Goals
+Future features could include:
+- WIP
