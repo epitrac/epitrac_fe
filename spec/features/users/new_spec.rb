@@ -79,6 +79,12 @@ RSpec.feature "New User Form", type: :feature do
 
         expect(User.exists?(name: 'John Smith')).to eq(false)
       end
+      it 'redirects back to the form with an error message if the user is not created successfully' do
+        click_button 'Submit'
+
+        expect(page).to have_current_path(new_user_path)
+        expect(page).to have_content('Error: ')
+      end
     end
   end
 end
