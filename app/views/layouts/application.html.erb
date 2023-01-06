@@ -14,9 +14,9 @@
       <%= msg %>
     <% end %>
     <nav class= "topnav-left">
-      <%= link_to "Home", "/"%>
+      <%= link_to "Home", "/"%> <%= link_to "About", "/about", method: :get %>
     </nav>
-    
+
     <%= yield %>
   </body>
 </html>
