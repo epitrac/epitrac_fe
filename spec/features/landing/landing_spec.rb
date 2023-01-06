@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'application landing page' do
     before :each do
-        @user_1 = User.create!(name: "Spongebob", email: "Sponge.bob@underthesea.com", username: "grillmaster1", password: "gary123", password: "gary123", password_confirmation: "gary123", state: "Colorado")
+        @user_1 = User.create!(name: "Spongebob", email: "Sponge.bob@underthesea.com", username: "grillmaster1", password: "gary123", password_confirmation: "gary123", state: "Colorado")
         visit root_path
     end
 
