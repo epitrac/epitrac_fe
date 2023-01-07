@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe EpitracService do
   describe 'class methods' do
-  
     describe '#articles_on_topic' do
       it 'returns articles for a given disease topic' do
         articles = EpitracService.articles_on_topic("Anthrax")
@@ -114,6 +113,25 @@ RSpec.describe EpitracService do
 
         expect(state_case[:attributes]).to have_key(:current_week_cases)
         expect(state_case[:attributes][:current_week_cases]).to be_a(Integer)
+      end
+    end
+
+    describe '#disease_info' do
+      it 'returns information for the given disease' do
+        disease = EpitracService.disease_info("Anthrax")
+
+        expect(disease).to be_a(Hash)
+        expect(disease[:data]).to be_a(Hash)
+        disease_info = disease[:data]
+
+        expect(disease_info[:attributes]).to have_key(:disease)
+        expect(disease_info[:attributes][:disease]).to be_a(String)
+
+        expect(disease_info[:attributes]).to have_key(:information)
+        expect(disease_info[:attributes][:information]).to be_a(String)
+
+        expect(disease_info[:attributes]).to have_key(:link)
+        expect(disease_info[:attributes][:link]).to be_a(String)
       end
     end
   end

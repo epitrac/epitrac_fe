@@ -18,4 +18,8 @@ class EpitracService
   def self.articles_on_topic(disease)
     get_url("/api/v1/articles?disease=#{disease}")
   end
+
+  def self.disease_info(disease)
+    get_url("/api/v1/disease_info?disease=#{disease}")
+  end
 end
