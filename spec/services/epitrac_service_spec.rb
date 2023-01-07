@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe EpitracService do
   describe 'class methods' do
+  
     describe '#articles_on_topic' do
       it 'returns articles for a given disease topic' do
         articles = EpitracService.articles_on_topic("Anthrax")
@@ -41,7 +42,7 @@ RSpec.describe EpitracService do
         expect(article[:attributes][:doi]).to be_a(String)
       end
     end
-
+    
     describe '#all_states_cases' do
       it 'finds all stats disease cases for the week' do
         states_cases = EpitracService.all_states_cases
