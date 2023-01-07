@@ -41,7 +41,7 @@ RSpec.describe EpitracService do
         expect(article[:attributes][:doi]).to be_a(String)
       end
     end
-
+    
     describe '#all_states_cases' do
       it 'finds all stats disease cases for the week' do
         states_cases = EpitracService.all_states_cases
