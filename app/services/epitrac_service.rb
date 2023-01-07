@@ -14,4 +14,8 @@ class EpitracService
   def self.cases_for_state(state)
     get_url("/api/v1/disease_cases?state=#{state.upcase}")
   end
+
+  def self.articles_on_topic(disease)
+    get_url("/api/v1/articles?disease=#{disease}")
+  end
 end
