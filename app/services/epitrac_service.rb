@@ -1,4 +1,4 @@
-class DiseaseCaseService
+class EpitracService
   def self.conn
     Faraday.new(url: "https://epitrac-be.herokuapp.com")
   end

@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe DiseaseCaseService do
+RSpec.describe EpitracService do
   describe 'class methods' do
     describe '#all_states_cases' do
       it 'finds all stats disease cases for the week' do
-        states_cases = DiseaseCaseService.all_states_cases
+        states_cases = EpitracService.all_states_cases
 
         expect(states_cases).to be_a(Hash)
         expect(states_cases[:data]).to be_an(Array)
@@ -41,7 +41,7 @@ RSpec.describe DiseaseCaseService do
 
     describe '#cases_for_state' do
       it 'returns only cases for a given state' do
-        state_cases = DiseaseCaseService.cases_for_state("georgia")
+        state_cases = EpitracService.cases_for_state("georgia")
 
         expect(state_cases).to be_a(Hash)
         expect(state_cases[:data]).to be_an(Array)
