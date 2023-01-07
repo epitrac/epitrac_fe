@@ -31,7 +31,7 @@ RSpec.describe DiseaseCaseFacade do
         expect(case_1.cumulative_last).to eq(0)
         expect(case_1.current_week).to eq(51)
         expect(case_1.disease).to eq("Anthrax")
-        expect(case_1.id).to eq("20225100003")
+        expect(case_1.id).to eq("20225100032")
         expect(case_1.state).to eq("GEORGIA")
         expect(case_1.year).to eq("2022")
       end
