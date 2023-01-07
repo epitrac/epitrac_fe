@@ -28,8 +28,8 @@ RSpec.describe DiseaseCaseService do
         expect(state_case[:attributes]).to have_key(:cumulative_last)
         expect(state_case[:attributes][:cumulative_last]).to be_a(Integer)
 
-        expect(state_case[:attributes]).to have_key(:coordintates)
-        expect(state_case[:attributes][:coordintates]).to be_a(Array)
+        expect(state_case[:attributes]).to have_key(:coordinates)
+        expect(state_case[:attributes][:coordinates]).to be_a(Array)
 
         expect(state_case[:attributes]).to have_key(:id)
         expect(state_case[:attributes][:id]).to be_a(String)
