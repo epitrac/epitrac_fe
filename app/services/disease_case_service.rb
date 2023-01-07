@@ -10,4 +10,8 @@ class DiseaseCaseService
   def self.all_states_cases
     get_url("/api/v1/disease_cases")
   end
+
+  def self.cases_for_state(state)
+    get_url("/api/v1/disease_cases?state=#{state.upcase}")
+  end
 end
