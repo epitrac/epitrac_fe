@@ -36,6 +36,7 @@ gem 'bcrypt', '~> 3.1.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'faraday'
+gem 'omniauth-google-oauth2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -44,7 +45,6 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'pry'
   gem 'figaro'
-  gem 'faraday'
   gem 'capybara', '>= 2.15'
   gem 'simplecov', require: false
   gem 'webmock'
