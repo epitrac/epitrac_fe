@@ -6,7 +6,9 @@
 </div>
 
 <%= render partial: '/partials/map' %>
-
+<button id="test_button" onclick="changeInfo('something')">Testing</button>
+<p id="info">thing</p>
 Extra text<br>
 for testing<br>
 purposes
+<%= javascript_include_tag("info.js")%>
