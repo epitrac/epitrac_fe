@@ -1,7 +1,32 @@
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <script src="https://use.fontawesome.com/948cc87750.js"></script>
 
-
-<%= image_tag "map.png", alt: "map", class: "map" %>
-
+<a name="map_locations"></a>
+<section class="map">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+          <%= image_tag "map.png", alt: "map", class: "img-fluid mx-auto" %>
+				<a class="btn pop default-popup" data-content="for LunarXP locations" data-placement="top" data-toggle="popover"  
+                data-trigger="focus click"  title="Click on the map" id="showPop" tabindex="0" role="button"></a>
+				<a class="btn pop lunarxp-launch-site" data-content="LunarXP Launch Site" data-placement="top" data-toggle="popover" 
+                data-trigger="focus"  title=""    id="btn1"  tabindex="0" role="button"></a>
+				<a class="btn pop lunarxp-control-center" data-content="LunarXP Control Center" data-placement="top" data-toggle="popover" 
+                data-trigger="focus"  title=""    id="btn2"  tabindex="0" role="button"></a>
+				<a class="btn pop lunarxp-rocket-factory" data-content="LunarXP Rocket Factory" data-placement="top" data-toggle="popover" 
+                data-trigger="focus"  title=""    id="btn3"  tabindex="0" role="button"></a>
+				<a class="btn pop lunarxp-colony-xp-1" data-content="LunarXP Colony XP-1" data-placement="top" data-toggle="popover" 
+                data-trigger="focus"  title=""    id="btn4"  tabindex="0" role="button"></a>
+				<a class="btn pop lunarxp-colony-hab-1" data-content="LunarXP Colony HAB-1" data-placement="top" data-toggle="popover" 
+                data-trigger="focus"  title=""    id="btn5"  tabindex="0" role="button"></a>
+				<a class="btn pop lunarxp-colony-orbiter-1" data-content="LunarXP Colony Orbiter-1" data-placement="top" data-toggle="popover" 
+                data-trigger="focus"  title=""    id="btn6"  tabindex="0" role="button"></a>
+				<a class="btn pop lunar-xplorer" data-content="Lunar XPlorer" data-placement="top" data-toggle="popover" 
+                data-trigger="focus"  title=""    id="btn7"  tabindex="0" role="button"></a>
+				<a class="btn pop florida" data-content="Florida" data-placement="top" data-toggle="popover" 
+                data-trigger="focus"  title="Solodev"    id="btn8"  tabindex="0" role="button"></a>
+			</div>
+		</div>
+	</div>
+</section>
 <%= javascript_include_tag("map.js")%>
