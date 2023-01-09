@@ -12,7 +12,9 @@ RSpec.describe 'delete user' do
 
   it "can delete a user " do
     visit "/dashboard"
+    
     click_link "Delete Account"
+    
     expect(current_path).to eq("/")
   end
 end

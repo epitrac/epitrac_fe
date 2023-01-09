@@ -8,6 +8,11 @@ class SessionsController < ApplicationController
     redirect_to root_path
   end
 
+  def destroy
+    session.destroy
+    redirect_to root_path
+  end
+
   private
 
   def auth_hash

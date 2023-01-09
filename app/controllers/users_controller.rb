@@ -6,6 +6,7 @@ class UsersController < ApplicationController
   def destroy
     user = User.find(session[:user_id])
     user.destroy
+    session.destroy
     redirect_to '/'
   end
 end

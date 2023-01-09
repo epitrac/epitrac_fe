@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   patch '/dashboard', to: 'users#update'
 
   get '/auth/:provider/callback', to: 'sessions#create'
+  delete '/sessions', to: 'sessions#destroy'
 end
