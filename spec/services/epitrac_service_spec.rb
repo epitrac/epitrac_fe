@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe EpitracService do
-  describe 'class methods' do
+  describe 'class methods', :vcr do
     describe '#articles_on_topic' do
       it 'returns articles for a given disease topic' do
         articles = EpitracService.articles_on_topic("Anthrax")

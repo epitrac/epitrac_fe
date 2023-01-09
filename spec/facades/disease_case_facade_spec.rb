@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe DiseaseCaseFacade do
-  describe 'class methods' do
+  describe 'class methods', :vcr do
     describe '#all_states_cases' do
       it 'creates objects from cases data for all states' do
         expect(DiseaseCaseFacade.all_states_cases).to be_an(Array)
@@ -11,9 +11,9 @@ RSpec.describe DiseaseCaseFacade do
         expect(case_1.coordinates).to eq([-72.67399, 41.76376])
         expect(case_1.cumulative_current).to eq(0)
         expect(case_1.cumulative_last).to eq(0)
-        expect(case_1.current_week).to eq(51)
+        expect(case_1.current_week).to eq(52)
         expect(case_1.disease).to eq("Anthrax")
-        expect(case_1.id).to eq("20225100003")
+        expect(case_1.id).to eq("20225200003")
         expect(case_1.state).to eq("CONNECTICUT")
         expect(case_1.year).to eq("2022")
       end
@@ -29,9 +29,9 @@ RSpec.describe DiseaseCaseFacade do
         expect(case_1.coordinates).to eq([-84.39111, 33.74831])
         expect(case_1.cumulative_current).to eq(0)
         expect(case_1.cumulative_last).to eq(0)
-        expect(case_1.current_week).to eq(51)
+        expect(case_1.current_week).to eq(52)
         expect(case_1.disease).to eq("Anthrax")
-        expect(case_1.id).to eq("20225100032")
+        expect(case_1.id).to eq("20225200032")
         expect(case_1.state).to eq("GEORGIA")
         expect(case_1.year).to eq("2022")
       end
