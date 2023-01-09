@@ -1,5 +1,13 @@
 <div align= "right">
-    <%= link_to "Delete Account", "/users/#{@user.id}", method: :delete %>
+    <%= link_to "Delete Account", "/dashboard", method: :delete %><br>
+    <%= link_to "Update your State", "/dashboard/edit" %>
 </div>
 
-<center> <h1> User Show page </h1> </center>
+<center> <h1><%= @user.name %>'s Dashboard </h1> </center>
+<div id="user_info">
+    <h3>User information</h3>
+        <p>Name: <%= @user.name %></p>
+        <p>Email: <%= @user.email %></p>
+        <p>State: <%= @user.state if @user.state %>
+</div>
+<h3>Your Saved Articles</h3>
