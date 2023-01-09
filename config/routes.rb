@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   
   get '/dashboard', to: 'users#show'
   delete '/dashboard', to: 'users#destroy'
+  get '/dashboard/edit', to: 'users#edit'
   patch '/dashboard', to: 'users#update'
 
   get '/auth/:provider/callback', to: 'sessions#create'

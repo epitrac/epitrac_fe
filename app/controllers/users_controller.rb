@@ -9,4 +9,15 @@ class UsersController < ApplicationController
     session.destroy
     redirect_to '/'
   end
+
+  def edit
+    @user = User.find(session[:user_id])
+  end
+
+  def update
+    user = User.find(session[:user_id])
+    user.update(state: params[:state])
+
+    redirect_to '/dashboard'
+  end
 end
