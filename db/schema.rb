@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2023_01_04_164146) do
     t.string "name"
     t.string "email"
     t.string "token"
+    t.string "state"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
