@@ -10,8 +10,8 @@ RSpec.describe EpitracService do
         expect(articles[:data]).to be_an(Array)
         article = articles[:data][0]
 
-        expect(article[:attributes]).to have_key(:id)
-        expect(article[:attributes][:id]).to be_a(String)
+        expect(article[:attributes]).to have_key(:article_id)
+        expect(article[:attributes][:article_id]).to be_a(String)
 
         expect(article[:attributes]).to have_key(:author)
         expect(article[:attributes][:author]).to be_a(String)
@@ -121,17 +121,42 @@ RSpec.describe EpitracService do
         disease = EpitracService.disease_info("Anthrax")
 
         expect(disease).to be_a(Hash)
-        expect(disease[:data]).to be_a(Hash)
-        disease_info = disease[:data]
+        expect(disease[:data]).to be_a(Array)
+        disease_info = disease[:data][0]
 
         expect(disease_info[:attributes]).to have_key(:disease)
         expect(disease_info[:attributes][:disease]).to be_a(String)
+
+        expect(disease_info[:attributes]).to have_key(:short_name)
+        expect(disease_info[:attributes][:short_name]).to be_a(String)
 
         expect(disease_info[:attributes]).to have_key(:information)
         expect(disease_info[:attributes][:information]).to be_a(String)
 
         expect(disease_info[:attributes]).to have_key(:link)
         expect(disease_info[:attributes][:link]).to be_a(String)
+      end
+    end
+
+    describe '#all_disease_info' do
+      it 'returns all disease and info' do
+        diseases = EpitracService.all_disease_info
+
+        expect(diseases).to be_a(Hash)
+        expect(diseases[:data]).to be_an(Array)
+        disease = diseases[:data][0]
+
+        expect(disease[:attributes]).to have_key(:disease)
+        expect(disease[:attributes][:disease]).to be_a(String)
+
+        expect(disease[:attributes]).to have_key(:short_name)
+        expect(disease[:attributes][:short_name]).to be_a(String)
+
+        expect(disease[:attributes]).to have_key(:information)
+        expect(disease[:attributes][:short_name]).to be_a(String)
+
+        expect(disease[:attributes]).to have_key(:link)
+        expect(disease[:attributes][:link]).to be_a(String)
       end
     end
   end
