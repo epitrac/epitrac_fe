@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe ArticlesFacade do
-  describe 'class methods' do
+  describe 'class methods', :vcr do
     describe '#articles_on_topic' do
       it 'returns articles on given topic' do
         expect(ArticlesFacade.articles_on_topic("Anthrax")).to be_an(Array)

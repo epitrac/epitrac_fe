@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe DiseaseInfoFacade do
-  describe 'class methods' do
+  describe 'class methods', :vcr do
     describe '#disease_info' do
       it 'returns information about a given disease' do
         expect(DiseaseInfoFacade.disease_info("Anthrax")).to be_instance_of(DiseaseInfo)

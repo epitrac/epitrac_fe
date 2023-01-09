@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'delete user' do
+RSpec.describe 'users show page' do
   before :each do
     visit root_path
       
@@ -10,11 +10,9 @@ RSpec.describe 'delete user' do
     Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
   end
 
-  it "can delete a user " do
-    visit "/dashboard"
-    
-    click_link "Delete Account"
-    
-    expect(current_path).to eq("/")
+  it 'shows user information' do
+    visit '/dashboard'
+
+    expect(page).to have_content("Spongebob Squarepants's Dashboard")
   end
 end

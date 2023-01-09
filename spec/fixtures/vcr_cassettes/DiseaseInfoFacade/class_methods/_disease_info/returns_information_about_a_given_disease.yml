@@ -1,0 +1,97 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://epitrac-be.herokuapp.com/api/v1/disease_info?disease=Anthrax
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 09 Jan 2023 00:26:53 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"cdb88bf1f2096d6695c6e46852802960"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bb69e6f5-9c3f-49d8-a034-2e5d8ca8b45e
+      X-Runtime:
+      - '0.038741'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"disease_info","attributes":{"disease":"Anthrax","information":"Anthrax
+        is a serious infectious disease caused by gram-positive, rod-shaped bacteria
+        known as Bacillus anthracis. It occurs naturally in soil and commonly affects
+        domestic and wild animals around the world. People can get sick with anthrax
+        if they come in contact with infected animals or contaminated animal products.
+        Anthrax can cause severe illness in both humans and animals.","link":"https://www.cdc.gov/anthrax/"}}}'
+  recorded_at: Mon, 09 Jan 2023 00:26:54 GMT
+- request:
+    method: get
+    uri: https://epitrac-be.herokuapp.com/api/v1/disease_info?disease=Anthrax
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Mon, 09 Jan 2023 00:26:54 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"cdb88bf1f2096d6695c6e46852802960"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2ec259aa-4e2e-4312-9e15-2c99796d97fd
+      X-Runtime:
+      - '0.002967'
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"1","type":"disease_info","attributes":{"disease":"Anthrax","information":"Anthrax
+        is a serious infectious disease caused by gram-positive, rod-shaped bacteria
+        known as Bacillus anthracis. It occurs naturally in soil and commonly affects
+        domestic and wild animals around the world. People can get sick with anthrax
+        if they come in contact with infected animals or contaminated animal products.
+        Anthrax can cause severe illness in both humans and animals.","link":"https://www.cdc.gov/anthrax/"}}}'
+  recorded_at: Mon, 09 Jan 2023 00:26:54 GMT
+recorded_with: VCR 6.1.0
