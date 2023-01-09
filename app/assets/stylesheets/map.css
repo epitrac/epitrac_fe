@@ -19,52 +19,24 @@ a.btn:before {
   position: relative;
   z-index: 3;
 }
-.map button.btn.pop, .map a.btn.pop {
+.map button.btn.pin, .map a.btn.pin {
   z-index: 5;
   position: absolute;
-  color: #23303f;
+  color: #ff0000;
   min-width: 0;
 }
-.map button.btn.pop:focus, .map a.btn.pop:focus {
+.map button.btn.pin:focus, .map a.btn.pin:focus {
   box-shadow: unset;
   outline: 0;
   border: 0;
 }
-.map button.btn.pop.default-popup, .map a.btn.pop.default-popup {
-  z-index: -1;
-  right: 30%;
+
+.map button.btn.pin.colorado, .map a.btn.pin.colorado {
+  left: 32%;
+  top: 43%;
 }
-.map button.btn.pop.lunarxp-launch-site, .map a.btn.pop.lunarxp-launch-site {
-  left: 9%;
-  top: 30%;
-}
-.map button.btn.pop.lunarxp-control-center, .map a.btn.pop.lunarxp-control-center {
-  left: 14%;
-  top: -17%;
-}
-.map button.btn.pop.lunarxp-rocket-factory, .map a.btn.pop.lunarxp-rocket-factory {
-  left: 11%;
-  top: -2%;
-}
-.map button.btn.pop.lunarxp-colony-xp-1, .map a.btn.pop.lunarxp-colony-xp-1 {
-  left: 44%;
-  bottom: 22%;
-}
-.map button.btn.pop.lunarxp-colony-hab-1, .map a.btn.pop.lunarxp-colony-hab-1 {
-  right: 37%;
-  top: 25%;
-}
-.map button.btn.pop.lunarxp-colony-orbiter-1, .map a.btn.pop.lunarxp-colony-orbiter-1 {
-  right: 15%;
-  top: 4%;
-}
-.map button.btn.pop.lunar-xplorer, .map a.btn.pop.lunar-xplorer {
-  right: 25%;
-  bottom: 30%;
-}
-.map button.btn.pop.florida, .map a.btn.pop.florida {
-  right: 16%;
+
+.map button.btn.pin.florida, .map a.btn.pin.florida {
+  right: 17%;
   bottom: 14%;
-  transform: rotate(60deg);
-  padding: 10px 44px;
 }
