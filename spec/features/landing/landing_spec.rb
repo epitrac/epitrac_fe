@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'application landing page' do
+RSpec.describe 'application landing page', :vcr do
   describe 'user logged into application' do
     before :each do
       visit root_path

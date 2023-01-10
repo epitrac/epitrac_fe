@@ -1,5 +1,5 @@
 class AboutsController < ApplicationController
-    def index
-        
-    end
+  def index
+    @diseases = DiseaseInfoFacade.all_disease_info
+  end
 end
