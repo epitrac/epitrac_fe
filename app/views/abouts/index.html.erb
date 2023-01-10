@@ -1,18 +1,80 @@
 <h1 align= "center"> About EpiTrac </h1>
 
-<h3> CDC NNDSS info </h3>
-    <section id='CDC_NNDSS_info'>
-        123
-    </section>
+<h2 style="text-align:center">Our Team</h2>
+<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Darby Smith</h5>
+        <p class="card-text">darbymsmith2@gmail.com</p>
+        <button href="https://www.linkedin.com/in/darby-m-smith/" type="button" class="btn btn-secondary">LinkedIn</button> 
+        <button href="https://github.com/DarbySmith" type="button" class="btn btn-secondary">GitHub</button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Emily Port</h5>
+        <p class="card-text">emilylport@gmail.com</p>
+        <button href="https://www.linkedin.com/in/emily-port-3ab6389b/" type="button" class="btn btn-secondary">LinkedIn</button> 
+        <button href="https://github.com/eport01" type="button" class="btn btn-secondary">GitHub</button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Madeline Mauser</h5>
+        <p class="card-text">madeline.mauser@gmail.com</p>
+        <button href="https://www.linkedin.com/in/madeline-mauser-644239245/" type="button" class="btn btn-secondary">LinkedIn</button> 
+        <button href="https://github.com/MadelineMauser" type="button" class="btn btn-secondary">GitHub</button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">William Wang</h5>
+        <p class="card-text">willy.j.wang@gmail.com</p>
+        <button href="https://www.linkedin.com/in/william-wang-814442240/" type="button" class="btn btn-secondary">LinkedIn</button> 
+        <button href="https://github.com/willjw2" type="button" class="btn btn-secondary">GitHub</button>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Shawn Lee</h5>
+        <p class="card-text">shawnl93@hotmail.com</p>
+        <button href="https://www.linkedin.com/in/shawn-lee-3382aa8b/" type="button" class="btn btn-secondary">LinkedIn</button> 
+        <button href="https://github.com/Shawnl93" type="button" class="btn btn-secondary">GitHub</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<h3> Info about National Notifiable Disease Surveillance System(NNDSS)</h3>
-    <section id='NNDSS_info'>
-        <p>The National Notifiable Disease Surveillance System (NNDSS) is a program run by the Centers for Disease Control and Prevention (CDC) in collaboration with local, state, and federal public health centers. The program includes surveillance of notifiable infectious and noninfectious diseases. Reports are published weekly and summarized annually. Disesae reports are recieved from all 50 states, New York City, the District of Columbia, and 5 U.S. territories. This application limits data to the 50 states. </p>
-        <br>
-        <a href="https://www.cdc.gov/nndss/index.html">Learn More</a>
-    </section>
+<div class='about-section'>
+  <h3> Our App </h3>
+  <p>The National Notifiable Disease Surveillance System (NNDSS) is a program run by the Centers for Disease Control and Prevention (CDC) in collaboration with local, state, and federal public health centers. The program includes surveillance of notifiable infectious and noninfectious diseases. Reports are published weekly and summarized annually. Disesae reports are recieved from all 50 states, New York City, the District of Columbia, and 5 U.S. territories. This application limits data to the 50 states. We have created a map of the weekly reports organized by state. </p>
+  <br>
+  <a href="https://www.cdc.gov/nndss/index.html">Learn More</a>
+</div>
 
-<h3> Diseases Tracked </h3>
-    <section id='Diseases_tracked'>
-        789
-    </section>
+<br>
+
+<h2 style="text-align:center">Diseases Surveilled</h2>
+<div class="row">
+  <div class="column">
+    <% @diseases.each do |disease_info| %>
+      <div class="card">
+        <div class="container">
+          <h2><%= disease_info.disease %></h2>
+          <p class="title"><%= disease_info.short_name %></p>
+          <p><%= disease_info.information %></p>
+          <p><a href=<%= disease_info.link %> class="button" role="button">More Info</a></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

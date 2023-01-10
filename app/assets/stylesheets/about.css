@@ -26,7 +26,7 @@ html {
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: rgb(6, 58, 84);
   color: white;
 }
 
@@ -50,7 +50,7 @@ html {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: #000;
+  background-color: rgb(6, 58, 84);
   text-align: center;
   cursor: pointer;
   width: 100%;
