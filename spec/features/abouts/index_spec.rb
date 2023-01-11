@@ -40,6 +40,8 @@ RSpec.describe 'about page', :vcr do
       expect(page).to have_content("Diseases Surveilled")
       expect(page).to have_content("Anthrax")
       expect(page).to have_content("Arboviral diseases, Chikungunya virus disease")
+      expect(page).to have_link("More Info")
+
     end
   end
 end
