@@ -1,6 +1,6 @@
-<h1 align= "center"> Articles for <%=@disease%></h1>
+<h1 align= "center"> Articles for <%=params[:disease]%></h1>
 <br><br>
-<p><h3>Total Number of Articles for <%=@disease%>: <%=@articles.count%></h3></p>
+<p><h3>Total Number of Articles for <%=params[:disease]%>: <%=@articles.count%></h3></p>
 <br><hr>
 <%@articles.each do |article|%>
   <p><strong>Title: </strong><%=article.title%></p>
