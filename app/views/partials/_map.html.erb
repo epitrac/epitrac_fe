@@ -10,7 +10,7 @@
           <% @states_array.each do |state, index| %>
             <%fixed_state = state.downcase.gsub(' ','_')%>
             <a class="btn pin <%=fixed_state%>" data-placement="top" data-toggle="tooltip" 
-                       title="<%=state%>"    id="<%=fixed_state%>"  tabindex="0" role="button" onclick="changeInfo('<%=state.upcase%>')"></a>
+                       title="<%=state%>"    id="<%=fixed_state%>"  tabindex="0" role="button" onclick="changeInfo('<%=state.upcase%>'); pinScroll();"></a>
           <% end %>
 			</div>
 		</div>

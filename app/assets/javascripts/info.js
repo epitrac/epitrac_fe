@@ -16,6 +16,10 @@ async function changeInfo(state) {
   document.getElementById("info").innerHTML = '<tr><th>Disease Name: # cases for the week</th></tr>' + sortedDiseases.map(disease => "<tr><td><a href='/about#" + formatName(disease[0]) +"'>" + disease[0] + "</a>: " + disease[1] + "</td></tr>");
 }
 
+function pinScroll() {
+  document.getElementById("state_name").scrollIntoView({behavior: 'smooth'});
+}
+
 function resetInfo(data) {
   document.getElementById("info").innerHTML = data;
   document.getElementById("state_name").innerHTML = null;
