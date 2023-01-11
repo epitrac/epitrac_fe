@@ -76,6 +76,7 @@
             <p class="title"><%= disease_info.short_name %></p>
             <p><%= disease_info.information %></p>
             <p><a href=<%= disease_info.link %> class="button" role="button">More Info</a></p>
+            <p><%=button_to "Find #{disease_info.short_name} Articles", articles_path, method: :get %></p>
           </div>
         </div>
       <% end %>
