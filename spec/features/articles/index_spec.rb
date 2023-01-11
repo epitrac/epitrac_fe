@@ -39,11 +39,31 @@ RSpec.describe 'articles page', :vcr do
         click_button "Delete Article From Dashboard"
       end
       expect(current_path).to eq(dashboard_path)
+      expect(page).to have_content("Article was successfully deleted from dashboard")
       expect(page).to_not have_content("Title: Detection of Bacillus anthracis in animal tissues using InBios Active Anthrax Detect Rapid Test lateral flow immunoassay")
 
 
     end
 
+    it 'a logged out user cannot save an article' do 
+      visit root_path 
+      click_on "Articles"
+      click_link "Find Anthrax Articles"
+      within "#0266-8254" do 
+        expect(page).to have_button "Save to Dashboard"
+        click_button "Save to Dashboard"
+      end
+
+      visit root_path 
+      click_button "Logout"
+      click_on "Articles"
+      click_link "Find Anthrax Articles"
+      within "#0266-8254" do 
+        expect(page).to_not have_button "Save to Dashboard"
+      end
+    end
+
     
   end
+
 end
