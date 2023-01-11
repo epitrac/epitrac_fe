@@ -76,6 +76,8 @@
             <p class="title"><%= disease_info.short_name %></p>
             <p><%= disease_info.information %></p>
             <p><a href=<%= disease_info.link %> class="button" role="button">More Info</a></p>
+            <p><a href=<%= articles_path(params: {disease: disease_info.short_name})  %> class="button" role="button">Find <%=disease_info.short_name%> Articles</a></p>
+
           </div>
         </div>
       <% end %>
