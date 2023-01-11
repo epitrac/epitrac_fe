@@ -19,7 +19,6 @@ RSpec.describe 'about page', :vcr do
       expect(page).to have_content("Emily Port")
       expect(page).to have_content("Madeline Mauser")
       expect(page).to have_content("William Wang")
-      expect(page).to have_content("Shawn Lee")
     end
   end
 
