@@ -39,9 +39,7 @@ class EpitracService
   end
 
   def self.delete_url(url)
-    # JSON.parse(conn.delete(url).body, symbolize_names: true)
     conn.delete(url).body 
-
   end
 
   def self.delete(article_id)
