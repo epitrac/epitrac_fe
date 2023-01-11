@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get '/articles', to: 'articles#index'
   
   get '/dashboard', to: 'users#show'
+  get '/user_articles', to: 'user_articles#index'
+  post '/user_articles', to: 'user_articles#create'
   delete '/dashboard', to: 'users#destroy'
   get '/dashboard/edit', to: 'users#edit'
   patch '/dashboard', to: 'users#update'

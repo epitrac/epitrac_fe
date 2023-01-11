@@ -10,6 +10,6 @@
   <p><strong>ISBN_ISSN: </strong><%=article.isbn_issn%></p>
   <p><strong>URL: </strong><a href=<%= article.url %>><%=article.url%></a></p>
   <p><strong>Abstract: </strong><%=article.abstract%></p>
-  <%=button_to "Save to Dashboard", dashboard_path, params: {}%>
+  <%=button_to "Save to Dashboard", user_articles_path(params: {article_id: article.id, user_id: session[:user_id]}), method: :post%>
   <br><hr>
 <%end%>
