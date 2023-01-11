@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=192
+    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=281
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 18:40:02 GMT
+      - Wed, 11 Jan 2023 19:48:12 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f910be7a-66bb-4d98-a09c-027c3f99aeda
+      - 12762693-5f16-4930-9fc1-fa9c640602bc
       X-Runtime:
-      - '0.003276'
+      - '0.002847'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -43,5 +43,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Wed, 11 Jan 2023 18:40:02 GMT
+  recorded_at: Wed, 11 Jan 2023 19:48:11 GMT
 recorded_with: VCR 6.1.0
