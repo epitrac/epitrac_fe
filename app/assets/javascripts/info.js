@@ -1,5 +1,5 @@
 async function changeInfo(state) {
-  let response = await fetch(`http://localhost:5000/api/v1/disease_cases?state=${state}`);
+  let response = await fetch(`https://epitrac-be.herokuapp.com/api/v1/disease_cases?state=${state}`);
   console.log(response.json)
   let data = await response.json();
   console.log("1", data)
