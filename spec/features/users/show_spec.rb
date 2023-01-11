@@ -41,6 +41,6 @@ RSpec.describe 'users show page' do
   it 'has a section for articles' do
     visit '/dashboard'
 
-    expect(page).to have_content("Spongebob Squarepants Articles")
+    expect(page).to have_content("Spongebob Squarepants Saved Articles")
   end
 end
