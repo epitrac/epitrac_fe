@@ -2,7 +2,9 @@
 <h1 align= "center" > EpiTrac </h1>
 <br>
 <%= render partial: '/partials/map' %>
+
 <button id="test_button" onclick="resetInfo('Click on a State Pin to Reveal Disease Data')">Reset</button>
+<p>Disease Name: # cases for the week</p>
 <p id="info">Click on a State Pin to Reveal Disease Data</p>
 
 <%= javascript_include_tag("info.js")%>
