@@ -1,3 +1,18 @@
+<h2 style="text-align:center"><%= @user.name %> Dashboard</h2>
+<div class="row">
+<div class="column">
+  <div class="card">
+    <div class="container">
+      <h2><%= @user.name %></h2>
+      <p class="title"><%= @user.email %></p>
+      <p><%= @user.state if @user.state %></p>
+      <p><a href="/dashboard/edit" class="button" role="button">Update Your State</a></p>
+    </div>
+  </div>
+</div>
+</div>
+
+
 <div align= "right">
     <%= link_to "Delete Account", "/dashboard", method: :delete %><br>
     <%= link_to "Update your State", "/dashboard/edit" %>
