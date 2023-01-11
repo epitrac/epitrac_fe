@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=107
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 11 Jan 2023 23:20:18 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0b05fd88303830fdf1b2b4b7d9b85e4d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ba5c104e-38ad-49f4-86c7-b0aaad65cbbf
+      X-Runtime:
+      - '0.262159'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6IjYzIiwidHlwZSI6ImFydGljbGUiLCJhdHRyaWJ1dGVzIjp7ImFydGljbGVfaWQiOiI4NjUxIiwiYXV0aG9yIjoiS29sdG9uLCBDLiBCLiBNLiwgQy4gSy47U3RvZGRhcmQsIFIuIEEuO0Nvc3NhYm9vbSwgQy47U2FsemVyLCBKLiBTLjtLb3plbCwgVC4gUi47R2F0ZXMtSG9sbGluZ3N3b3J0aCwgTS4gQS47Q2xldmVsYW5kLCBDLiBBLjtUaG9tcHNvbiwgQS4gVC47RGFsdG9uLCBNLiBGLjtZYWJzbGV5LCBNLiBKLjtIb2ZmbWFzdGVyLCBBLiBSLiwiLCJ0aXRsZSI6IkRldGVjdGlvbiBvZiBCYWNpbGx1cyBhbnRocmFjaXMgaW4gYW5pbWFsIHRpc3N1ZXMgdXNpbmcgSW5CaW9zIEFjdGl2ZSBBbnRocmF4IERldGVjdCBSYXBpZCBUZXN0IGxhdGVyYWwgZmxvdyBpbW11bm9hc3NheSIsInllYXIiOiIyMDE5IiwiZGF0ZSI6IjE4LTAyIiwiaXNibl9pc3NuIjoiMDI2Ni04MjU0Iiwia2V5d29yZHMiOiJCYWNpbGx1cyBhbnRocmFjaXM6YW5pbWFsIHRpc3N1ZXM6YW50aHJheDpjYXBzdWxhciBhbnRpZ2VuOmxhdGVyYWwgZmxvdyBpbW11bm9hc3NheTpwb2x5Z2x1dGFtaWMgYWNpZCIsImFic3RyYWN0IjoiVGhlIEFjdGl2ZSBBbnRocmF4IERldGVjdCAoQUFEKSBSYXBpZCBUZXN0IGxhdGVyYWwgZmxvdyBpbW11bm9hc3NheSBpcyBhIHBvaW50LW9mLWNhcmUgYXNzYXkgdGhhdCB3YXMgdW5kZXIgaW52ZXN0aWdhdGlvbmFsIHVzZSBmb3IgZGV0ZWN0aW5nIEJhY2lsbHVzIGFudGhyYWNpcyBjYXBzdWxhciBwb2x5cGVwdGlkZSAocG9seWdsdXRhbWljIGFjaWQpIGluIGh1bWFuIGJsb29kLCBzZXJ1bSwgYW5kIHBsYXNtYS4gU21hbGwgc2FtcGxlIHZvbHVtZXMsIHJhcGlkIHJlc3VsdHMsIGFuZCBubyByZWZyaWdlcmF0aW9uIHJlcXVpcmVkIGFsbG93IGZvciBlYXN5IHVzZSBpbiBlaXRoZXIgdGhlIGZpZWxkIG9yIGxhYm9yYXRvcnkuIEFsdGhvdWdoIHRoZSB0ZXN0IHdhcyBkZXZlbG9wZWQgZm9yIHVzZSBpbiBzdXNwZWN0IGNhc2VzIG9mIGh1bWFuIGluaGFsYXRpb24gYW50aHJheCwgaXRzIGZlYXR1cmVzIGFsc28gbWFrZSBpdCBhIHBvdGVudGlhbGx5IHBvd2VyZnVsIHRvb2wgZm9yIHRlc3Rpbmcgc3VzcGVjdCBhbmltYWwgY2FzZXMuIFdlIHRlc3RlZCBhbmltYWwgdGlzc3VlIHNhbXBsZXMgdGhhdCB3ZXJlIGNvbmZpcm1lZCBvciBydWxlZCBvdXQgZm9yIEIuIGFudGhyYWNpcy4gVGhlIEFBRCBSYXBpZCBUZXN0cyB3ZXJlIGFsc28gZGVwbG95ZWQgaW4gdGhlIGZpZWxkLCB0ZXN0aW5nIGFuaW1hbCBjYXJjYXNzZXMgZHVyaW5nIGFuIGFudGhyYXggb3V0YnJlYWsgaW4gaGlwcG9wb3RhbWkgKEhpcHBvcG90YW11cyBhbXBoaWJpdXMpIGFuZCBDYXBlIGJ1ZmZhbG8gKFN5bmNlcnVzIGNhZmZlcikgaW4gTmFtaWJpYS4gRXZhbHVhdGlvbiBvZiBhbGwgc2FtcGxlcyBzaG93ZWQgYSBzcGVjaWZpY2l0eSBvZiA4MiUgYW5kIHNlbnNpdGl2aXR5IG9mIDk4JS4gSG93ZXZlciwgd2hlbiB0aGUgYXNzYXkgd2FzIHVzZWQgb24gc3BlY2ltZW5zIGZyb20gb25seSBmcmVzaCBjYXJjYXNzZXMgKGRlYWQgZm9yIGxlc3MgdGhhbiAyNCBob3VycyksIHRoZSBzcGVjaWZpY2l0eSBpbmNyZWFzZWQgdG8gOTYlLiBUaGUgQUFEIFJhcGlkIFRlc3QgaXMgYSByYXBpZCBhbmQgc2ltcGxlIHNjcmVlbmluZyBhc3NheSwgYnV0IGNvbmZpcm1hdG9yeSB0ZXN0aW5nIG5lZWRzIHRvIGJlIGRvbmUsIGVzcGVjaWFsbHkgd2hlbiB0aGUgYWdlIG9mIHRoZSBzYW1wbGUgKGRheXMgYW5pbWFsIGhhcyBiZWVuIGRlY2Vhc2VkKSBpcyB1bmtub3duLiBUaGlzIGFydGljbGUgaXMgcHJvdGVjdGVkIGJ5IGNvcHlyaWdodC4gQWxsIHJpZ2h0cyByZXNlcnZlZC4iLCJ1cmwiOiJodHRwczovL3d3dy5uY2JpLm5sbS5uaWguZ292L3B1Ym1lZC8zMDc3NjE0MyIsImRvaSI6IjEwLjExMTEvbGFtLjEzMTM0In19LHsiaWQiOiI2NCIsInR5cGUiOiJhcnRpY2xlIiwiYXR0cmlidXRlcyI6eyJhcnRpY2xlX2lkIjoiMTI4NTMiLCJhdXRob3IiOiJCbGFja2J1cm4sIEouIEsuO0tlbnUsIEUuO0FzaWVkdS1CZWtvZSwgRi47U2Fya29kaWUsIEIuO0tyYWNhbGlrLCBJLiBULjtCb3dlciwgVy4gQS47U3RvZGRhcmQsIFIuIEEuO1RyYXhsZXIsIFIuIE0uIiwidGl0bGUiOiJIaWdoIENhc2UtRmF0YWxpdHkgUmF0ZSBmb3IgSHVtYW4gQW50aHJheCwgTm9ydGhlcm4gR2hhbmEsIDIwMDUtMjAxNiIsInllYXIiOiIyMDIxIiwiZGF0ZSI6IkFwciIsImlzYm5faXNzbiI6IjEwODAtNjA0MCAoUHJpbnQpOjEwODAtNjA0MCIsImtleXdvcmRzIjoiQWZyaWNhOkJhY2lsbHVzIGFudGhyYWNpczpHaGFuYTpiYWN0ZXJpYTpjYXNlLWZhdGFsaXR5IHJhdGU6Y3V0YW5lb3VzIGFudGhyYXg6ZW50ZXJpYyBpbmZlY3Rpb25zOmZvb2Qgc2FmZXR5Omdhc3Ryb2ludGVzdGluYWwgYW50aHJheDpodW1hbiBhbnRocmF4OmxpdmVzdG9jazpsaXZlc3RvY2sgdmFjY2luYXRpb246bW9ydGFsaXR5OnN1cnZlaWxsYW5jZSIsImFic3RyYWN0IjoiVGhlIGh1bWFuIGN1dGFuZW91cyBhbnRocmF4IGNhc2UtZmF0YWxpdHkgcmF0ZSBpcyA/MSUgd2hlbiB0cmVhdGVkLCA1JS0yMCUgd2hlbiB1bnRyZWF0ZWQuIFdlIHJlcG9ydCBoaWdoIGNhc2UtZmF0YWxpdHkgcmF0ZXMgKG1lZGlhbsKgMzUuMCU7IDk1JSBDSSAyMS4xJS02Ni43JSkgZHVyaW5nIDIwMDUtMjAxNiBsaW5rZWQgdG8gbGl2ZXN0b2NrIGhhbmRsaW5nIGluIG5vcnRoZXJuIEdoYW5hLCB3aGVyZSB2ZXRlcmluYXJ5IHJlc291cmNlcyBhcmUgbGltaXRlZC4gTGl2ZXN0b2NrIHZhY2NpbmF0aW9uIGFuZCBhY2Nlc3MgdG8gaHVtYW4gdHJlYXRtZW50IHNob3VsZCBiZSBldmFsdWF0ZWQuIiwidXJsIjoiaHR0cHM6Ly9wdWJtZWQubmNiaS5ubG0ubmloLmdvdi8zMzc1NDk5MyIsImRvaSI6IjEwLjMyMDEvZWlkMjcwNC4yMDQ0OTYifX1dfQ==
+  recorded_at: Wed, 11 Jan 2023 23:20:18 GMT
+- request:
+    method: get
+    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=107
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 11 Jan 2023 23:20:19 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"0b05fd88303830fdf1b2b4b7d9b85e4d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - aa656a37-c8a5-4220-b02d-a6554a0c70eb
+      X-Runtime:
+      - '0.228442'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6IjYzIiwidHlwZSI6ImFydGljbGUiLCJhdHRyaWJ1dGVzIjp7ImFydGljbGVfaWQiOiI4NjUxIiwiYXV0aG9yIjoiS29sdG9uLCBDLiBCLiBNLiwgQy4gSy47U3RvZGRhcmQsIFIuIEEuO0Nvc3NhYm9vbSwgQy47U2FsemVyLCBKLiBTLjtLb3plbCwgVC4gUi47R2F0ZXMtSG9sbGluZ3N3b3J0aCwgTS4gQS47Q2xldmVsYW5kLCBDLiBBLjtUaG9tcHNvbiwgQS4gVC47RGFsdG9uLCBNLiBGLjtZYWJzbGV5LCBNLiBKLjtIb2ZmbWFzdGVyLCBBLiBSLiwiLCJ0aXRsZSI6IkRldGVjdGlvbiBvZiBCYWNpbGx1cyBhbnRocmFjaXMgaW4gYW5pbWFsIHRpc3N1ZXMgdXNpbmcgSW5CaW9zIEFjdGl2ZSBBbnRocmF4IERldGVjdCBSYXBpZCBUZXN0IGxhdGVyYWwgZmxvdyBpbW11bm9hc3NheSIsInllYXIiOiIyMDE5IiwiZGF0ZSI6IjE4LTAyIiwiaXNibl9pc3NuIjoiMDI2Ni04MjU0Iiwia2V5d29yZHMiOiJCYWNpbGx1cyBhbnRocmFjaXM6YW5pbWFsIHRpc3N1ZXM6YW50aHJheDpjYXBzdWxhciBhbnRpZ2VuOmxhdGVyYWwgZmxvdyBpbW11bm9hc3NheTpwb2x5Z2x1dGFtaWMgYWNpZCIsImFic3RyYWN0IjoiVGhlIEFjdGl2ZSBBbnRocmF4IERldGVjdCAoQUFEKSBSYXBpZCBUZXN0IGxhdGVyYWwgZmxvdyBpbW11bm9hc3NheSBpcyBhIHBvaW50LW9mLWNhcmUgYXNzYXkgdGhhdCB3YXMgdW5kZXIgaW52ZXN0aWdhdGlvbmFsIHVzZSBmb3IgZGV0ZWN0aW5nIEJhY2lsbHVzIGFudGhyYWNpcyBjYXBzdWxhciBwb2x5cGVwdGlkZSAocG9seWdsdXRhbWljIGFjaWQpIGluIGh1bWFuIGJsb29kLCBzZXJ1bSwgYW5kIHBsYXNtYS4gU21hbGwgc2FtcGxlIHZvbHVtZXMsIHJhcGlkIHJlc3VsdHMsIGFuZCBubyByZWZyaWdlcmF0aW9uIHJlcXVpcmVkIGFsbG93IGZvciBlYXN5IHVzZSBpbiBlaXRoZXIgdGhlIGZpZWxkIG9yIGxhYm9yYXRvcnkuIEFsdGhvdWdoIHRoZSB0ZXN0IHdhcyBkZXZlbG9wZWQgZm9yIHVzZSBpbiBzdXNwZWN0IGNhc2VzIG9mIGh1bWFuIGluaGFsYXRpb24gYW50aHJheCwgaXRzIGZlYXR1cmVzIGFsc28gbWFrZSBpdCBhIHBvdGVudGlhbGx5IHBvd2VyZnVsIHRvb2wgZm9yIHRlc3Rpbmcgc3VzcGVjdCBhbmltYWwgY2FzZXMuIFdlIHRlc3RlZCBhbmltYWwgdGlzc3VlIHNhbXBsZXMgdGhhdCB3ZXJlIGNvbmZpcm1lZCBvciBydWxlZCBvdXQgZm9yIEIuIGFudGhyYWNpcy4gVGhlIEFBRCBSYXBpZCBUZXN0cyB3ZXJlIGFsc28gZGVwbG95ZWQgaW4gdGhlIGZpZWxkLCB0ZXN0aW5nIGFuaW1hbCBjYXJjYXNzZXMgZHVyaW5nIGFuIGFudGhyYXggb3V0YnJlYWsgaW4gaGlwcG9wb3RhbWkgKEhpcHBvcG90YW11cyBhbXBoaWJpdXMpIGFuZCBDYXBlIGJ1ZmZhbG8gKFN5bmNlcnVzIGNhZmZlcikgaW4gTmFtaWJpYS4gRXZhbHVhdGlvbiBvZiBhbGwgc2FtcGxlcyBzaG93ZWQgYSBzcGVjaWZpY2l0eSBvZiA4MiUgYW5kIHNlbnNpdGl2aXR5IG9mIDk4JS4gSG93ZXZlciwgd2hlbiB0aGUgYXNzYXkgd2FzIHVzZWQgb24gc3BlY2ltZW5zIGZyb20gb25seSBmcmVzaCBjYXJjYXNzZXMgKGRlYWQgZm9yIGxlc3MgdGhhbiAyNCBob3VycyksIHRoZSBzcGVjaWZpY2l0eSBpbmNyZWFzZWQgdG8gOTYlLiBUaGUgQUFEIFJhcGlkIFRlc3QgaXMgYSByYXBpZCBhbmQgc2ltcGxlIHNjcmVlbmluZyBhc3NheSwgYnV0IGNvbmZpcm1hdG9yeSB0ZXN0aW5nIG5lZWRzIHRvIGJlIGRvbmUsIGVzcGVjaWFsbHkgd2hlbiB0aGUgYWdlIG9mIHRoZSBzYW1wbGUgKGRheXMgYW5pbWFsIGhhcyBiZWVuIGRlY2Vhc2VkKSBpcyB1bmtub3duLiBUaGlzIGFydGljbGUgaXMgcHJvdGVjdGVkIGJ5IGNvcHlyaWdodC4gQWxsIHJpZ2h0cyByZXNlcnZlZC4iLCJ1cmwiOiJodHRwczovL3d3dy5uY2JpLm5sbS5uaWguZ292L3B1Ym1lZC8zMDc3NjE0MyIsImRvaSI6IjEwLjExMTEvbGFtLjEzMTM0In19LHsiaWQiOiI2NCIsInR5cGUiOiJhcnRpY2xlIiwiYXR0cmlidXRlcyI6eyJhcnRpY2xlX2lkIjoiMTI4NTMiLCJhdXRob3IiOiJCbGFja2J1cm4sIEouIEsuO0tlbnUsIEUuO0FzaWVkdS1CZWtvZSwgRi47U2Fya29kaWUsIEIuO0tyYWNhbGlrLCBJLiBULjtCb3dlciwgVy4gQS47U3RvZGRhcmQsIFIuIEEuO1RyYXhsZXIsIFIuIE0uIiwidGl0bGUiOiJIaWdoIENhc2UtRmF0YWxpdHkgUmF0ZSBmb3IgSHVtYW4gQW50aHJheCwgTm9ydGhlcm4gR2hhbmEsIDIwMDUtMjAxNiIsInllYXIiOiIyMDIxIiwiZGF0ZSI6IkFwciIsImlzYm5faXNzbiI6IjEwODAtNjA0MCAoUHJpbnQpOjEwODAtNjA0MCIsImtleXdvcmRzIjoiQWZyaWNhOkJhY2lsbHVzIGFudGhyYWNpczpHaGFuYTpiYWN0ZXJpYTpjYXNlLWZhdGFsaXR5IHJhdGU6Y3V0YW5lb3VzIGFudGhyYXg6ZW50ZXJpYyBpbmZlY3Rpb25zOmZvb2Qgc2FmZXR5Omdhc3Ryb2ludGVzdGluYWwgYW50aHJheDpodW1hbiBhbnRocmF4OmxpdmVzdG9jazpsaXZlc3RvY2sgdmFjY2luYXRpb246bW9ydGFsaXR5OnN1cnZlaWxsYW5jZSIsImFic3RyYWN0IjoiVGhlIGh1bWFuIGN1dGFuZW91cyBhbnRocmF4IGNhc2UtZmF0YWxpdHkgcmF0ZSBpcyA/MSUgd2hlbiB0cmVhdGVkLCA1JS0yMCUgd2hlbiB1bnRyZWF0ZWQuIFdlIHJlcG9ydCBoaWdoIGNhc2UtZmF0YWxpdHkgcmF0ZXMgKG1lZGlhbsKgMzUuMCU7IDk1JSBDSSAyMS4xJS02Ni43JSkgZHVyaW5nIDIwMDUtMjAxNiBsaW5rZWQgdG8gbGl2ZXN0b2NrIGhhbmRsaW5nIGluIG5vcnRoZXJuIEdoYW5hLCB3aGVyZSB2ZXRlcmluYXJ5IHJlc291cmNlcyBhcmUgbGltaXRlZC4gTGl2ZXN0b2NrIHZhY2NpbmF0aW9uIGFuZCBhY2Nlc3MgdG8gaHVtYW4gdHJlYXRtZW50IHNob3VsZCBiZSBldmFsdWF0ZWQuIiwidXJsIjoiaHR0cHM6Ly9wdWJtZWQubmNiaS5ubG0ubmloLmdvdi8zMzc1NDk5MyIsImRvaSI6IjEwLjMyMDEvZWlkMjcwNC4yMDQ0OTYifX1dfQ==
+  recorded_at: Wed, 11 Jan 2023 23:20:19 GMT
+recorded_with: VCR 6.1.0
