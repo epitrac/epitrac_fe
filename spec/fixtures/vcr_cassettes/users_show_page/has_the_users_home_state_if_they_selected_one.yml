@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=64
+    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=194
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 18:29:28 GMT
+      - Wed, 11 Jan 2023 18:40:02 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9a4b406c-4ffb-4d5a-9a42-56f5f287ee12
+      - 1ad47b92-8f19-4427-8c0c-e187902cede1
       X-Runtime:
-      - '0.013908'
+      - '0.003322'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -43,10 +43,10 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Wed, 11 Jan 2023 18:29:28 GMT
+  recorded_at: Wed, 11 Jan 2023 18:40:03 GMT
 - request:
     method: get
-    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=64
+    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=194
     body:
       encoding: US-ASCII
       string: ''
@@ -65,7 +65,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 18:29:28 GMT
+      - Wed, 11 Jan 2023 18:40:03 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -75,9 +75,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - dd992f4f-5119-40d6-b9f5-9a5a272feb21
+      - 1dd864e9-3737-405b-9205-62bd98fe5942
       X-Runtime:
-      - '0.006002'
+      - '0.003161'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -87,5 +87,5 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"data":[]}'
-  recorded_at: Wed, 11 Jan 2023 18:29:28 GMT
+  recorded_at: Wed, 11 Jan 2023 18:40:03 GMT
 recorded_with: VCR 6.1.0

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'user edit state' do
+RSpec.describe 'user edit state', :vcr do
   before :each do
     visit root_path
       

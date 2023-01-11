@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'delete user' do
+RSpec.describe 'delete user', :vcr do
   before :each do
     visit root_path
       

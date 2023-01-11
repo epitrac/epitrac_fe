@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 18:21:11 GMT
+      - Wed, 11 Jan 2023 18:39:55 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 6b0f9069-04ab-4726-a5e7-184175e52fdd
+      - c15340f2-39de-4cb0-a4ad-3b118964afe0
       X-Runtime:
-      - '0.008356'
+      - '0.004362'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -48,7 +48,7 @@ http_interactions:
         domestic and wild animals around the world. People can get sick with anthrax
         if they come in contact with infected animals or contaminated animal products.
         Anthrax can cause severe illness in both humans and animals.","link":"https://www.cdc.gov/anthrax/"}}]}'
-  recorded_at: Wed, 11 Jan 2023 18:21:12 GMT
+  recorded_at: Wed, 11 Jan 2023 18:39:55 GMT
 - request:
     method: get
     uri: https://epitrac-be.herokuapp.com/api/v1/disease_info?disease=Anthrax
@@ -70,7 +70,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 18:21:12 GMT
+      - Wed, 11 Jan 2023 18:39:55 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -80,9 +80,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 1f9c833e-83b7-4602-b3c1-c745f24f20fa
+      - a97acb70-fbab-437c-b8aa-b4d38c62d315
       X-Runtime:
-      - '0.003787'
+      - '0.004284'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -97,5 +97,5 @@ http_interactions:
         domestic and wild animals around the world. People can get sick with anthrax
         if they come in contact with infected animals or contaminated animal products.
         Anthrax can cause severe illness in both humans and animals.","link":"https://www.cdc.gov/anthrax/"}}]}'
-  recorded_at: Wed, 11 Jan 2023 18:21:12 GMT
+  recorded_at: Wed, 11 Jan 2023 18:39:55 GMT
 recorded_with: VCR 6.1.0

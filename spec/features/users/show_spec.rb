@@ -13,7 +13,7 @@ RSpec.describe 'users show page', :vcr do
   it 'shows user information' do
     visit '/dashboard'
 
-    expect(page).to have_content("Spongebobs Squarepants's Dashboard")
+    expect(page).to have_content("Spongebob Squarepants Dashboard")
   end
 
   it 'shows the user email' do
@@ -41,6 +41,6 @@ RSpec.describe 'users show page', :vcr do
   it 'has a section for articles' do
     visit '/dashboard'
 
-    expect(page).to have_content("Spongebob Squarepants Saved Articles")
+    expect(page).to have_content("Spongebob Squarepants's Saved Articles")
   end
 end
