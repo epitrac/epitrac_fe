@@ -3,11 +3,17 @@
 <br>
 <%= render partial: '/partials/map' %>
 <br>
-<button class="btn btn-outline-dark" id="test_button" onclick="resetInfo('<tr><td>Click on a State Pin to Reveal Disease Data</td></tr>')">Reset</button>
+<button style="margin: 10px;" class="btn btn-outline-dark" id="test_button" onclick="resetInfo('<tr><td>Click on a State Pin to Reveal Disease Data</td></tr>')">Reset</button>
 <br>
+<br>
+<h2 id="state_name" style="text-align: center;"></h2>
 <table class="table" id="info">
 <tr>
 <td>Click on a State Pin to Reveal Disease Data</td>
 </tr>
 </table>
+<% if @home_state %>
+<div id="home_state" home_state="<%=@home_state.downcase.gsub(' ','_')%>"></div>
+<%= javascript_include_tag("home_state.js")%>
+<% end %>
 <%= javascript_include_tag("info.js")%>
