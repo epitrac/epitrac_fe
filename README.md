@@ -9,6 +9,8 @@
 - [Setup](#setup)
 - [Contributors](#contributors)
 - [Gems](#gems)
+- [Illistrations](#illustrations)
+- [Contributors](#contributors)
 
 
 ## Project Overview
@@ -28,7 +30,8 @@ The front-end handles authentication via OAuth.
 1. Clone the repository
 2. cd into the root directory
 3. Install gem packages: `bundle install`
-4. Setup the database: `rails db:create`
+4. Setup the database: `rails db:{create,migrate}`
+5. OAuth: Google Oauth 2 Setup: 
 
 ## Contributors
 <table>
@@ -65,16 +68,22 @@ The front-end handles authentication via OAuth.
 
 ## Gems
 - Pry
-- rspec
-- capybara
-- simplecov
-- shoulda-matchers
-- webmock
-- vcr
-- faraday
-- faker
-- factorybot
+- RSpec
+- Capybara
+- SimpleCov
+- Shoulda-Matchers
+- Webmock
+- VCR
+- Faraday
+- Faker
+- Factory Bot
 
 ## Known Issues/Future Goals
 Future features could include:
 - WIP
+
+## Illistrations
+- <a href="https://epitrac.herokuapp.com/">EpiTrac Deployed Link</a>
+
+## Contributors
+- 
