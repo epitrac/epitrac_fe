@@ -7,10 +7,13 @@
 <br>
 <br>
 <h2 id="state_name" style="text-align: center;"></h2>
-<table class="table" id="info">
+<table class="table">
+<tr><th>Disease Name: # cases for the week</th></tr>
+<div id="info">
 <tr>
 <td>Click on a State Pin to Reveal Disease Data</td>
 </tr>
+</div>
 </table>
 <% if @home_state %>
 <div id="home_state" home_state="<%=@home_state.downcase.gsub(' ','_')%>"></div>

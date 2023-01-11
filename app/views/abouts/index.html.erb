@@ -6,53 +6,58 @@
     <div class="col mb-4">
       <div class="card">
         <div class="card-body">
+          <img src="https://ca.slack-edge.com/T029P2S9M-U03L7FKNX0C-74ab3a9c5038-512" style="float:right;width:110px;height:110px;">
           <h5 class="card-title">Darby Smith</h5>
           <p class="card-text">darbymsmith2@gmail.com</p>
-          <button href="https://www.linkedin.com/in/darby-m-smith/" type="button" class="btn btn-secondary">LinkedIn</button> 
-          <button href="https://github.com/DarbySmith" type="button" class="btn btn-secondary">GitHub</button>
+          <a href="https://www.linkedin.com/in/darby-m-smith/" type="button" class="button">LinkedIn</a> 
+          <a href="https://github.com/DarbySmith" type="button" class="button">GitHub</a>
         </div>
       </div>
     </div>
     <div class="col mb-4">
       <div class="card">
         <div class="card-body">
+          <img src="https://ca.slack-edge.com/T029P2S9M-U03KYFF1E0N-bc39ab726ee4-512" style="float:right;width:110px;height:110px;">
           <h5 class="card-title">Emily Port</h5>
           <p class="card-text">emilylport@gmail.com</p>
-          <button href="https://www.linkedin.com/in/emily-port-3ab6389b/" type="button" class="btn btn-secondary">LinkedIn</button> 
-          <button href="https://github.com/eport01" type="button" class="btn btn-secondary">GitHub</button>
+          <a href="https://www.linkedin.com/in/emily-port-3ab6389b/" type="button" class="button">LinkedIn</a> 
+          <a href="https://github.com/eport01" type="button" class="button">GitHub</a>
         </div>
       </div>
     </div>
     <div class="col mb-4">
       <div class="card">
         <div class="card-body">
+          <img src="https://ca.slack-edge.com/T029P2S9M-U0376KHBE78-83c331a15948-512" style="float:right;width:110px;height:110px;">
           <h5 class="card-title">Madeline Mauser</h5>
           <p class="card-text">madeline.mauser@gmail.com</p>
-          <button href="https://www.linkedin.com/in/madeline-mauser-644239245/" type="button" class="btn btn-secondary">LinkedIn</button> 
-          <button href="https://github.com/MadelineMauser" type="button" class="btn btn-secondary">GitHub</button>
+          <a href="https://www.linkedin.com/in/madeline-mauser-644239245/" type="button" class="button">LinkedIn</a> 
+          <a href="https://github.com/MadelineMauser" type="button" class="button">GitHub</a>
         </div>
       </div>
     </div>
     <div class="col mb-4">
       <div class="card">
         <div class="card-body">
+          <img src="https://ca.slack-edge.com/T029P2S9M-U03KQFD5WJK-e1166a8fec70-512" style="float:right;width:110px;height:110px;">
           <h5 class="card-title">William Wang</h5>
           <p class="card-text">willy.j.wang@gmail.com</p>
-          <button href="https://www.linkedin.com/in/william-wang-814442240/" type="button" class="btn btn-secondary">LinkedIn</button> 
-          <button href="https://github.com/willjw2" type="button" class="btn btn-secondary">GitHub</button>
+          <a href="https://www.linkedin.com/in/william-wang-814442240/" type="button" class="button">LinkedIn</a> 
+          <a href="https://github.com/willjw2" type="button" class="button">GitHub</a>
         </div>
       </div>
     </div>
     <div class="col mb-4">
       <div class="card">
         <div class="card-body">
+          <img src="https://ca.slack-edge.com/T029P2S9M-U03EMJ8TK8S-ffcc0e1574eb-512" style="float:right;width:110px;height:110px;">
           <h5 class="card-title">Shawn Lee</h5>
-          <p class="card-text">shawnl93@hotmail.com</p>
-          <button href="https://www.linkedin.com/in/shawn-lee-3382aa8b/" type="button" class="btn btn-secondary">LinkedIn</button> 
-          <button href="https://github.com/Shawnl93" type="button" class="btn btn-secondary">GitHub</button>
+          <p class="card-text">shawnl93@hotmail.com</p> 
+          <a href="https://www.linkedin.com/in/shawn-lee-3382aa8b/" type="button" class="button">LinkedIn</a> 
+          <a href="https://github.com/Shawnl93" type="button" class="button">GitHub</a> 
         </div>
       </div>
-    </div>
+     </div>
   </div>
 </div>
 
@@ -76,6 +81,8 @@
             <p class="title"><%= disease_info.short_name %></p>
             <p><%= disease_info.information %></p>
             <p><a href=<%= disease_info.link %> class="button" role="button">More Info</a></p>
+            <p><a href=<%= articles_path(params: {disease: disease_info.short_name})  %> class="button" role="button">Find <%=disease_info.short_name%> Articles</a></p>
+
           </div>
         </div>
       <% end %>

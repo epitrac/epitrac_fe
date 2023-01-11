@@ -1,13 +1,27 @@
-<div align= "right">
-    <%= link_to "Delete Account", "/dashboard", method: :delete %><br>
-    <%= link_to "Update your State", "/dashboard/edit" %>
+<h2 style="text-align:center"><%= @user.name %> Dashboard</h2>
+<hr>
+<br>
+<h3>User Information</h3>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container" align="center">
+        <h4><%= @user.name %></h4>
+        <p class="title"><%= @user.email %></p>
+        <p class="title"><%= @user.state if @user.state %></p>
+        <p><a href="/dashboard/edit" class="button" role="button">Update Your State</a></p>
+      </div>
+    </div>
+  </div>
 </div>
+<br>
+<h3 style="text-align:left"><%= @user.name %> Saved Articles</h3>
+<hr>
 
-<center> <h1><%= @user.name %>'s Dashboard </h1> </center>
-<div id="user_info">
-    <h3>User information</h3>
-        <p>Name: <%= @user.name %></p>
-        <p>Email: <%= @user.email %></p>
-        <p>State: <%= @user.state if @user.state %>
-</div>
-<h3>Your Saved Articles</h3>
+<footer class="page-footer font-small special-color-dark pt-4">
+  <br>
+  <hr>
+  <p align="center">This action cannot be undone. Please be sure you want to delete your account.
+  <p align="center"><%= link_to "Delete Account", "/dashboard", method: :delete %><p><br>
+</footer>
+

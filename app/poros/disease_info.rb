@@ -5,6 +5,7 @@ class DiseaseInfo
               :short_name
 
   def initialize(attributes)
+    @id = [:id]
     @disease = attributes[:disease]
     @information = attributes[:information]
     @link = attributes[:link]
