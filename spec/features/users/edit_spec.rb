@@ -10,9 +10,6 @@ RSpec.describe 'user edit state', :vcr do
     click_on "Login with Google"
     
     Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
-    # VCR.eject_cassette
-    # VCR.insert_cassette('user can add or update state')
-  
   end
   
   it 'lets a user add or update the state' do
