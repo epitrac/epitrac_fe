@@ -26,9 +26,12 @@ class EpitracService
   def self.all_disease_info
     get_url("/api/v1/disease_info")
   end
-  
+  def self.post_url(url)
+    JSON.parse(conn.post(url).body, symbolize_names: true)
+  end
+
   def self.save_article(user_id, article_id)
-    get_url("/api/v1/user_articles?user_id=#{user_id}&article_id=#{article_id}")
+    post_url("/api/v1/user_articles?user_id=#{user_id}&article_id=#{article_id}")
   end
 
   def self.return_saved_articles(user_id)

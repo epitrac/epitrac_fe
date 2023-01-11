@@ -11,7 +11,8 @@ class UserArticlesController < ApplicationController
   # end
 
   def create
-    UserArticleFacade.save_to_dashboard(params[:user_id], params[:article_id])
+    @user = User.find(session[:user_id])
+    @article = UserArticleFacade.save_to_dashboard(@user.id, params[:article_id])
     # @user_article = UserArticle.new(user_id: params[:user_id], article_id: params[:article_id])
     redirect_to dashboard_path(params[:user_id])
   end
