@@ -23,6 +23,14 @@ RSpec.describe 'application landing page', :vcr do
       expect(current_path).to eq("/about")
     end
 
+    it "has a link to article section on about page " do
+      expect(page).to have_link("Articles", href:"/about#diseases")
+
+      click_on "Articles"
+      expect(current_path).to eq("/about") 
+      expect(page).to have_content("Diseases Surveilled")
+    end
+
     it 'does not have a create user button or login user button' do
       expect(page).to_not have_button("Create User with Google")
       expect(page).to_not have_button("Login with Google")
