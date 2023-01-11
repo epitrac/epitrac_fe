@@ -4,8 +4,10 @@ class UserArticleFacade
   end
 
   def self.view_saved(user_id)
-    # require 'pry'; binding.pry
     EpitracService.return_saved_articles(user_id)[:data]  
   end
+
+  def self.delete_article(article_id)
+    EpitracService.delete(article_id)
+  end
 end
-# "https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=#{session[:user_id]}&article_id=#{article.id}"

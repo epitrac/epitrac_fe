@@ -38,4 +38,14 @@ class EpitracService
     get_url("/api/v1/user_articles?user_id=#{user_id}")
   end
 
+  def self.delete_url(url)
+    # JSON.parse(conn.delete(url).body, symbolize_names: true)
+    conn.delete(url).body 
+
+  end
+
+  def self.delete(article_id)
+    delete_url("/api/v1/user_articles/#{article_id}")
+  end
+
 end

@@ -16,6 +16,7 @@
 </div>
 <br>
 <h3 style="text-align:left"><%= @user.name %>'s Saved Articles</h3>
+<hr>
 <%@saved_articles.each do |article|%>
   <p><strong>Title: </strong><%=article[:attributes][:title]%></p>
   <p><strong>Authors: </strong><%=article[:attributes][:author]%></p>
@@ -24,6 +25,8 @@
   <p><strong>ISBN_ISSN: </strong><%=article[:attributes][:isbn_issn]%></p>
   <p><strong>URL: </strong><a href=<%= article[:attributes][:url] %>><%=article[:attributes][:url]%></a></p>
   <p><strong>Abstract: </strong><%=article[:attributes][:abstract]%></p>
+  <%=button_to "Delete Article From Dashboard", "/user_articles/#{(article[:id])}", method: :delete%>
+
   <hr>
 <%end%>
 
