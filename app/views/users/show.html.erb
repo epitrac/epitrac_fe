@@ -16,7 +16,14 @@
 </div>
 <br>
 <h3 style="text-align:left"><%= @user.name %> Saved Articles</h3>
-<hr>
+<br><hr>
+<%@saved_articles.each do |article|%>
+  <p><strong>Title: </strong><%=article.title%></p>
+  <p><strong>Authors: </strong><%=article.author%></p>
+  <p><strong>URL: </strong><a href=<%= article.url %>><%=article.url%></a></p>
+  <p><%= link_to "Delete Article", "/user_articles/#{article.id}", method: :delete %><p><br>
+  <br><hr>
+<%end%>
 
 <footer class="page-footer font-small special-color-dark pt-4">
   <br>
@@ -24,4 +31,3 @@
   <p align="center">This action cannot be undone. Please be sure you want to delete your account.
   <p align="center"><%= link_to "Delete Account", "/dashboard", method: :delete %><p><br>
 </footer>
-

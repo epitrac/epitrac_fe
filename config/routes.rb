@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   get '/about', to: "abouts#index"
   get '/about/:id', to: "abouts#show"
   get '/articles', to: 'articles#index'
-  
+
+  delete '/user_articles/:id', to: 'user_articles#destroy'
+  post '/user_articles/:id', to: 'user_articles#create'
+
   get '/dashboard', to: 'users#show'
   delete '/dashboard', to: 'users#destroy'
   get '/dashboard/edit', to: 'users#edit'

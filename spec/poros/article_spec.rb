@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Article do
   it 'exists' do
     attributes = {
-      "id": "8651",
+      "article_id": "8651",
       "author": "Kolton, C. B. M.",
       "title": "Detection of Bacillus anthracis",
       "year": "2019",

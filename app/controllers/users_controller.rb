@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(session[:user_id])
+    @saved_articles = UserArticlesFacade.user_articles(session[:user_id])
+    # require "pry"; binding.pry
   end
 
   def destroy

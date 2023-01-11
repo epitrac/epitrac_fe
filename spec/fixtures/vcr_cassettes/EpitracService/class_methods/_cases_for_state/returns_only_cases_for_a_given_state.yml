@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Mon, 09 Jan 2023 21:54:41 GMT
+      - Wed, 11 Jan 2023 20:33:21 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7b3f404c-a3e4-4e2e-8a8e-1eab2deec496
+      - '097c4cf3-0c69-4f94-8c18-f97574d53170'
       X-Runtime:
-      - '0.144292'
+      - '0.150766'
+      Vary:
+      - Origin
       Transfer-Encoding:
       - chunked
       Via:
@@ -128,5 +130,5 @@ http_interactions:
         hemorrhagic fevers, Sabia virus","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207522","current_week_cases":0}},{"id":"20225207592","type":"disease_case","attributes":{"state":"GEORGIA","year":"2022","current_week":52,"disease":"Yellow
         fever","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207592","current_week_cases":0}},{"id":"20225207662","type":"disease_case","attributes":{"state":"GEORGIA","year":"2022","current_week":52,"disease":"Zika
         virus disease, non-congenital","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207662","current_week_cases":0}}]}'
-  recorded_at: Mon, 09 Jan 2023 21:54:41 GMT
+  recorded_at: Wed, 11 Jan 2023 20:33:22 GMT
 recorded_with: VCR 6.1.0

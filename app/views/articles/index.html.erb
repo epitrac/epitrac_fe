@@ -10,5 +10,6 @@
   <p><strong>ISBN_ISSN: </strong><%=article.isbn_issn%></p>
   <p><strong>URL: </strong><a href=<%= article.url %>><%=article.url%></a></p>
   <p><strong>Abstract: </strong><%=article.abstract%></p>
+  <p><%= link_to "Save Article", "/user_articles/#{article.id}", method: :post %><p><br>
   <br><hr>
 <%end%>
