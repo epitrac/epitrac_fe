@@ -1,7 +1,7 @@
 <h1 align= "center"> Articles for <%=@disease%></h1>
 <br><br>
 <p><h3>Total Number of Articles for <%=@disease%>: <%=@articles.count%></h3></p>
-<br>
+<br><hr>
 <%@articles.each do |article|%>
   <p><strong>Title: </strong><%=article.title%></p>
   <p><strong>Authors: </strong><%=article.author%></p>
