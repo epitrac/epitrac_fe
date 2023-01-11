@@ -23,19 +23,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 21:23:43 GMT
+      - Wed, 11 Jan 2023 23:29:13 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"4dea92583eec7f615b686bdaa12f711c"
+      - W/"e8d61c6c5baa37e33874d3d9d183c367"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 719e03fe-3f36-49cc-ac28-1ce916aa4aef
+      - 7f78d4da-6f8b-4e7c-a48a-0b67d9921158
       X-Runtime:
-      - '0.005468'
+      - '0.005871'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -44,6 +44,6 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"59","type":"user_article","attributes":{"user_id":1,"article_id":5}}}'
-  recorded_at: Wed, 11 Jan 2023 21:23:43 GMT
+      string: '{"data":{"id":"76","type":"user_article","attributes":{"user_id":1,"article_id":5}}}'
+  recorded_at: Wed, 11 Jan 2023 23:29:12 GMT
 recorded_with: VCR 6.1.0
