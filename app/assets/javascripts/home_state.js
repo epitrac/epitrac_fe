@@ -1,6 +1,3 @@
-function clickHomePin() {
-  let homeState = document.getElementById('home_state').getAttribute('home_state');
-  document.getElementById(homeState).click();
-}
+var homeState = document.getElementById('home_state').getAttribute('home_state').toUpperCase();
 
-window.onload = clickHomePin();
+window.onload = changeInfo(homeState);

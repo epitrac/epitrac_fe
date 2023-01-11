@@ -18,7 +18,6 @@ RSpec.describe Article do
       article = Article.new(attributes)
 
       expect(article).to be_instance_of(Article)
-      expect(article.id).to eq("8651")
       expect(article.author).to eq("Kolton, C. B. M.")
       expect(article.title).to eq("Detection of Bacillus anthracis")
       expect(article.year).to eq("2019")

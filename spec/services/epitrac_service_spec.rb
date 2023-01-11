@@ -159,5 +159,22 @@ RSpec.describe EpitracService do
         expect(disease[:attributes][:link]).to be_a(String)
       end
     end
+
+    describe '#save_article' do 
+      it 'saves an article to user_article api' do 
+        article = EpitracService.save_article(1, 5)
+        expect(article).to be_a(Hash)
+        expect(article[:data]).to be_an(Hash)
+        
+        expect(article[:data]).to have_key(:id)
+        expect(article[:data][:id]).to be_a String 
+
+        expect(article[:data][:attributes]).to have_key(:user_id)
+        expect(article[:data][:attributes][:user_id]).to be_an Integer 
+
+        expect(article[:data][:attributes]).to have_key(:article_id)
+        expect(article[:data][:attributes][:article_id]).to be_an Integer 
+      end
+    end
   end
 end

@@ -11,7 +11,7 @@ class Article
               :doi
 
   def initialize(attributes)
-    @id = attributes[:id]
+    @id = attributes[:article_id]
     @author = attributes[:author]
     @title = attributes[:title]
     @year = attributes[:year]
