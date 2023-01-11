@@ -76,8 +76,8 @@ a.btn:before {
 }
 
 .map button.btn.pin.florida, .map a.btn.pin.florida {
-  right: 17%;
-  bottom: 14%;
+  left: 79.5%;
+  top: 80%;
 }
 
 .map button.btn.pin.georgia, .map a.btn.pin.georgia {
@@ -86,8 +86,8 @@ a.btn:before {
 }
 
 .map button.btn.pin.hawaii, .map a.btn.pin.hawaii {
-  left: 35%;
-  top: 91%;
+  left: 34.2%;
+  top: 91.6%;
 }
 
 .map button.btn.pin.idaho, .map a.btn.pin.idaho {
