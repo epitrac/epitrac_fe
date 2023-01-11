@@ -1,9 +1,7 @@
 async function changeInfo(state) {
   let response = await fetch(`https://epitrac-be.herokuapp.com/api/v1/disease_cases?state=${state}`);
-  console.log(response.json)
+
   let data = await response.json();
-  console.log("1", data)
-  console.log("2", data.data)
 
   document.getElementById("state_name").innerHTML = state;
 
