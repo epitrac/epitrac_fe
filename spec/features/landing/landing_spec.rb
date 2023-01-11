@@ -30,6 +30,10 @@ RSpec.describe 'application landing page', :vcr do
 
     it 'has a button to logout' do
       expect(page).to have_button("Logout")
+
+      click_on "Logout"
+
+      expect(page).to_not have_button("Logout")
     end
   end
 
