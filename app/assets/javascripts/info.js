@@ -13,7 +13,7 @@ async function changeInfo(state) {
 
   });
   let sortedDiseases = sortableDiseases.sort((a, b) => b[1] - a[1]);
-  document.getElementById("info").innerHTML = sortedDiseases.map(disease => "<tr><td>" + disease[0] + ": " + disease[1] + "</td></tr>");
+  document.getElementById("info").innerHTML = '<tr><th>Disease Name: # cases for the week</th></tr>' + sortedDiseases.map(disease => "<tr><td>" + disease[0] + ": " + disease[1] + "</td></tr>");
 }
 
 function resetInfo(data) {
