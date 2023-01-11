@@ -1,7 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe 'user edit state' do
+RSpec.describe 'user edit state', :vcr do
   before :each do
+    ActiveRecord::Base.connection.reset_pk_sequence!('users')
+
     visit root_path
       
     expect(page).to have_button("Login with Google")
@@ -11,11 +13,15 @@ RSpec.describe 'user edit state' do
   end
   
   it 'lets a user add or update the state' do
+
     visit '/dashboard/edit'
 
     select 'Georgia', from: :state
     click_on "Submit"
 
+
     expect(current_path).to eq('/dashboard')
+
+  
   end
 end

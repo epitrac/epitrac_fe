@@ -1,7 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe 'delete user' do
+RSpec.describe 'delete user', :vcr do
   before :each do
+    ActiveRecord::Base.connection.reset_pk_sequence!('users')
     visit root_path
       
     expect(page).to have_button("Login with Google")
@@ -11,10 +12,12 @@ RSpec.describe 'delete user' do
   end
 
   it "can delete a user " do
+
     visit "/dashboard"
-    
+
     click_link "Delete Account"
     
     expect(current_path).to eq("/")
   end
+
 end
