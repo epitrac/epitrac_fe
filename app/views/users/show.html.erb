@@ -17,6 +17,7 @@
 <br>
 <h3 style="text-align:left"><%= @user.name %>'s Saved Articles</h3>
 <hr>
+<p><strong>Total Number of Saved Articles: </strong><%=@saved_articles.count%></p>
 <%@saved_articles.each do |article|%>
   <p><strong>Title: </strong><%=article[:attributes][:title]%></p>
   <p><strong>Authors: </strong><%=article[:attributes][:author]%></p>
