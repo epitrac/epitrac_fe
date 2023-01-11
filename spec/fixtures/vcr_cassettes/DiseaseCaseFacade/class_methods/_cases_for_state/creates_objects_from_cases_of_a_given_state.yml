@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 19:48:01 GMT
+      - Wed, 11 Jan 2023 21:23:18 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 384ee19a-18f9-43d6-835a-1a7707311f80
+      - 6537dee6-6d9b-4a3f-b524-b95d98b198e2
       X-Runtime:
-      - '0.112230'
+      - '0.155300'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -130,7 +130,7 @@ http_interactions:
         hemorrhagic fevers, Sabia virus","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207522","current_week_cases":0}},{"id":"20225207592","type":"disease_case","attributes":{"state":"GEORGIA","year":"2022","current_week":52,"disease":"Yellow
         fever","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207592","current_week_cases":0}},{"id":"20225207662","type":"disease_case","attributes":{"state":"GEORGIA","year":"2022","current_week":52,"disease":"Zika
         virus disease, non-congenital","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207662","current_week_cases":0}}]}'
-  recorded_at: Wed, 11 Jan 2023 19:48:00 GMT
+  recorded_at: Wed, 11 Jan 2023 21:23:18 GMT
 - request:
     method: get
     uri: https://epitrac-be.herokuapp.com/api/v1/disease_cases?state=GEORGIA
@@ -152,7 +152,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 19:48:01 GMT
+      - Wed, 11 Jan 2023 21:23:19 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -162,9 +162,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 9f054513-af8c-4475-9dd3-6b5ba310b545
+      - 9e147473-537d-4db9-a71a-7004f177dc05
       X-Runtime:
-      - '0.131506'
+      - '0.143465'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -261,7 +261,7 @@ http_interactions:
         hemorrhagic fevers, Sabia virus","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207522","current_week_cases":0}},{"id":"20225207592","type":"disease_case","attributes":{"state":"GEORGIA","year":"2022","current_week":52,"disease":"Yellow
         fever","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207592","current_week_cases":0}},{"id":"20225207662","type":"disease_case","attributes":{"state":"GEORGIA","year":"2022","current_week":52,"disease":"Zika
         virus disease, non-congenital","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207662","current_week_cases":0}}]}'
-  recorded_at: Wed, 11 Jan 2023 19:48:01 GMT
+  recorded_at: Wed, 11 Jan 2023 21:23:18 GMT
 - request:
     method: get
     uri: https://epitrac-be.herokuapp.com/api/v1/disease_cases?state=GEORGIA
@@ -283,7 +283,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 19:48:01 GMT
+      - Wed, 11 Jan 2023 21:23:19 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -293,9 +293,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 91a4c10a-f845-41cc-b3b6-3726bbec2579
+      - 4973f988-5927-48f1-9ebc-6c525dfe86b2
       X-Runtime:
-      - '0.123306'
+      - '0.108555'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -392,5 +392,5 @@ http_interactions:
         hemorrhagic fevers, Sabia virus","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207522","current_week_cases":0}},{"id":"20225207592","type":"disease_case","attributes":{"state":"GEORGIA","year":"2022","current_week":52,"disease":"Yellow
         fever","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207592","current_week_cases":0}},{"id":"20225207662","type":"disease_case","attributes":{"state":"GEORGIA","year":"2022","current_week":52,"disease":"Zika
         virus disease, non-congenital","cumulative_current":0,"cumulative_last":0,"coordinates":[-84.39111,33.74831],"id":"20225207662","current_week_cases":0}}]}'
-  recorded_at: Wed, 11 Jan 2023 19:48:01 GMT
+  recorded_at: Wed, 11 Jan 2023 21:23:19 GMT
 recorded_with: VCR 6.1.0
