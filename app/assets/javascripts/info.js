@@ -6,8 +6,8 @@ async function changeInfo(state) {
   console.log("2", data.data)
   // let data = JSON.parse(info);
   document.getElementById("info").innerHTML = data.data.map(disease => "<br>" + disease.attributes.disease + ": " + disease.attributes.current_week_cases);
-
 }
+
 function resetInfo(data) {
   document.getElementById("info").innerHTML = data
 }
