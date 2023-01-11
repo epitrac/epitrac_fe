@@ -13,10 +13,18 @@ async function changeInfo(state) {
 
   });
   let sortedDiseases = sortableDiseases.sort((a, b) => b[1] - a[1]);
-  document.getElementById("info").innerHTML = '<tr><th>Disease Name: # cases for the week</th></tr>' + sortedDiseases.map(disease => "<tr><td>" + disease[0] + ": " + disease[1] + "</td></tr>");
+  document.getElementById("info").innerHTML = '<tr><th>Disease Name: # cases for the week</th></tr>' + sortedDiseases.map(disease => "<tr><td><a href='/about#" + formatName(disease[0]) +"'>" + disease[0] + "</a>: " + disease[1] + "</td></tr>");
+}
+
+function pinScroll() {
+  document.getElementById("state_name").scrollIntoView({behavior: 'smooth'});
 }
 
 function resetInfo(data) {
   document.getElementById("info").innerHTML = data;
   document.getElementById("state_name").innerHTML = null;
+}
+
+function formatName(disease) {
+  return disease.replace(/,/g, '').replace(/ /g, '_').toLowerCase();
 }
