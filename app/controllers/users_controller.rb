@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
   def show
     @user = User.find(session[:user_id])
-    @saved_articles = UserArticleFacade.view_saved(session[:user_id])
+    # @saved_articles = UserArticleFacade.view_saved(session[:user_id])
+    @saved_articles = UserArticleFacade.user_articles(session[:user_id])
+
   end
 
   def destroy

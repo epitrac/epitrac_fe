@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 21:23:15 GMT
+      - Wed, 11 Jan 2023 21:54:40 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 281eeddc-db5b-422a-a700-4b9547d9769d
+      - 92554730-65ad-4676-b28d-0ad4ccb7ca42
       X-Runtime:
-      - '0.270746'
+      - '0.309321'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -797,7 +797,7 @@ http_interactions:
         ISLAND","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":211,"cumulative_last":278,"coordinates":[-71.41198,41.82388],"id":"20225200987","current_week_cases":0}},{"id":"20225200988","type":"disease_case","attributes":{"state":"VERMONT","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":157,"cumulative_last":213,"coordinates":[-72.57627,44.26029],"id":"20225200988","current_week_cases":0}},{"id":"20225200990","type":"disease_case","attributes":{"state":"NEW
         JERSEY","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1499,"cumulative_last":1696,"coordinates":[-74.75942,40.21789],"id":"20225200990","current_week_cases":0}},{"id":"20225200991","type":"disease_case","attributes":{"state":"NEW
         YORK","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1324,"cumulative_last":2315,"coordinates":[-73.75522,42.65155],"id":"20225200991","current_week_cases":22}},{"id":"20225200993","type":"disease_case","attributes":{"state":"PENNSYLVANIA","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":2485,"cumulative_last":2643,"coordinates":[-76.88224,40.25986],"id":"20225200993","current_week_cases":0}},{"id":"20225200995","type":"disease_case","attributes":{"state":"ILLINOIS","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":2210,"cumulative_last":2078,"coordinates":[-89.64361,39.8013],"id":"20225200995","current_week_cases":1}},{"id":"20225200996","type":"disease_case","attributes":{"state":"INDIANA","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":252,"cumulative_last":888,"coordinates":[-86.15013,39.76691],"id":"20225200996","current_week_cases":0}},{"id":"20225200997","type":"disease_case","attributes":{"state":"MICHIGAN","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1115,"cumulative_last":1507,"coordinates":[-84.55226,42.73194],"id":"20225200997","current_week_cases":1}},{"id":"20225200998","type":"disease_case","attributes":{"state":"OHIO","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":2124,"cumulative_last":1981,"coordinates":[-83.00276,39.96199],"id":"20225200998","current_week_cases":0}},{"id":"20225200999","type":"disease_case","attributes":{"state":"WISCONSIN","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1175,"cumulative_last":1343,"coordinates":[-89.38645,43.07313],"id":"20225200999","current_week_cases":4}}]}'
-  recorded_at: Wed, 11 Jan 2023 21:23:16 GMT
+  recorded_at: Wed, 11 Jan 2023 21:54:41 GMT
 - request:
     method: get
     uri: https://epitrac-be.herokuapp.com/api/v1/disease_cases
@@ -819,7 +819,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 21:23:17 GMT
+      - Wed, 11 Jan 2023 21:54:41 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -829,9 +829,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ea276bc9-582c-4505-8525-40c4eef6f435
+      - 5000cbaa-8b2b-46f3-8607-7b2b115e8e7d
       X-Runtime:
-      - '0.259433'
+      - '0.262863'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -1595,7 +1595,7 @@ http_interactions:
         ISLAND","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":211,"cumulative_last":278,"coordinates":[-71.41198,41.82388],"id":"20225200987","current_week_cases":0}},{"id":"20225200988","type":"disease_case","attributes":{"state":"VERMONT","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":157,"cumulative_last":213,"coordinates":[-72.57627,44.26029],"id":"20225200988","current_week_cases":0}},{"id":"20225200990","type":"disease_case","attributes":{"state":"NEW
         JERSEY","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1499,"cumulative_last":1696,"coordinates":[-74.75942,40.21789],"id":"20225200990","current_week_cases":0}},{"id":"20225200991","type":"disease_case","attributes":{"state":"NEW
         YORK","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1324,"cumulative_last":2315,"coordinates":[-73.75522,42.65155],"id":"20225200991","current_week_cases":22}},{"id":"20225200993","type":"disease_case","attributes":{"state":"PENNSYLVANIA","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":2485,"cumulative_last":2643,"coordinates":[-76.88224,40.25986],"id":"20225200993","current_week_cases":0}},{"id":"20225200995","type":"disease_case","attributes":{"state":"ILLINOIS","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":2210,"cumulative_last":2078,"coordinates":[-89.64361,39.8013],"id":"20225200995","current_week_cases":1}},{"id":"20225200996","type":"disease_case","attributes":{"state":"INDIANA","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":252,"cumulative_last":888,"coordinates":[-86.15013,39.76691],"id":"20225200996","current_week_cases":0}},{"id":"20225200997","type":"disease_case","attributes":{"state":"MICHIGAN","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1115,"cumulative_last":1507,"coordinates":[-84.55226,42.73194],"id":"20225200997","current_week_cases":1}},{"id":"20225200998","type":"disease_case","attributes":{"state":"OHIO","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":2124,"cumulative_last":1981,"coordinates":[-83.00276,39.96199],"id":"20225200998","current_week_cases":0}},{"id":"20225200999","type":"disease_case","attributes":{"state":"WISCONSIN","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1175,"cumulative_last":1343,"coordinates":[-89.38645,43.07313],"id":"20225200999","current_week_cases":4}}]}'
-  recorded_at: Wed, 11 Jan 2023 21:23:16 GMT
+  recorded_at: Wed, 11 Jan 2023 21:54:42 GMT
 - request:
     method: get
     uri: https://epitrac-be.herokuapp.com/api/v1/disease_cases
@@ -1617,7 +1617,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 21:23:18 GMT
+      - Wed, 11 Jan 2023 21:54:42 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -1627,9 +1627,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - af4c972e-742a-4002-ab95-01004c643583
+      - 9f124407-882e-45f6-a25c-461180a37282
       X-Runtime:
-      - '0.277124'
+      - '0.254419'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -2393,5 +2393,5 @@ http_interactions:
         ISLAND","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":211,"cumulative_last":278,"coordinates":[-71.41198,41.82388],"id":"20225200987","current_week_cases":0}},{"id":"20225200988","type":"disease_case","attributes":{"state":"VERMONT","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":157,"cumulative_last":213,"coordinates":[-72.57627,44.26029],"id":"20225200988","current_week_cases":0}},{"id":"20225200990","type":"disease_case","attributes":{"state":"NEW
         JERSEY","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1499,"cumulative_last":1696,"coordinates":[-74.75942,40.21789],"id":"20225200990","current_week_cases":0}},{"id":"20225200991","type":"disease_case","attributes":{"state":"NEW
         YORK","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1324,"cumulative_last":2315,"coordinates":[-73.75522,42.65155],"id":"20225200991","current_week_cases":22}},{"id":"20225200993","type":"disease_case","attributes":{"state":"PENNSYLVANIA","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":2485,"cumulative_last":2643,"coordinates":[-76.88224,40.25986],"id":"20225200993","current_week_cases":0}},{"id":"20225200995","type":"disease_case","attributes":{"state":"ILLINOIS","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":2210,"cumulative_last":2078,"coordinates":[-89.64361,39.8013],"id":"20225200995","current_week_cases":1}},{"id":"20225200996","type":"disease_case","attributes":{"state":"INDIANA","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":252,"cumulative_last":888,"coordinates":[-86.15013,39.76691],"id":"20225200996","current_week_cases":0}},{"id":"20225200997","type":"disease_case","attributes":{"state":"MICHIGAN","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1115,"cumulative_last":1507,"coordinates":[-84.55226,42.73194],"id":"20225200997","current_week_cases":1}},{"id":"20225200998","type":"disease_case","attributes":{"state":"OHIO","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":2124,"cumulative_last":1981,"coordinates":[-83.00276,39.96199],"id":"20225200998","current_week_cases":0}},{"id":"20225200999","type":"disease_case","attributes":{"state":"WISCONSIN","year":"2022","current_week":52,"disease":"Campylobacteriosis","cumulative_current":1175,"cumulative_last":1343,"coordinates":[-89.38645,43.07313],"id":"20225200999","current_week_cases":4}}]}'
-  recorded_at: Wed, 11 Jan 2023 21:23:17 GMT
+  recorded_at: Wed, 11 Jan 2023 21:54:42 GMT
 recorded_with: VCR 6.1.0

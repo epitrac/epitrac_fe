@@ -21,19 +21,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 21:23:32 GMT
+      - Wed, 11 Jan 2023 21:54:55 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"82d33e8bb65abb2ef5d3ef7d48c056ed"
+      - W/"b393de75fefb862d4db11f34a66bbcad"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7ec0b09e-3d70-4fcf-9da2-3879776d92d7
+      - bd773208-c8ed-4194-ae65-c96f7cbc46ba
       X-Runtime:
-      - '3.321363'
+      - '2.914015'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -42,152 +42,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"27","type":"article","attributes":{"article_id":"8651","author":"Kolton,
-        C. B. M., C. K.;Stoddard, R. A.;Cossaboom, C.;Salzer, J. S.;Kozel, T. R.;Gates-Hollingsworth,
-        M. A.;Cleveland, C. A.;Thompson, A. T.;Dalton, M. F.;Yabsley, M. J.;Hoffmaster,
-        A. R.,","title":"Detection of Bacillus anthracis in animal tissues using InBios
-        Active Anthrax Detect Rapid Test lateral flow immunoassay","year":"2019","date":"18-02","isbn_issn":"0266-8254","keywords":"Bacillus
-        anthracis:animal tissues:anthrax:capsular antigen:lateral flow immunoassay:polyglutamic
-        acid","abstract":"The Active Anthrax Detect (AAD) Rapid Test lateral flow
-        immunoassay is a point-of-care assay that was under investigational use for
-        detecting Bacillus anthracis capsular polypeptide (polyglutamic acid) in human
-        blood, serum, and plasma. Small sample volumes, rapid results, and no refrigeration
-        required allow for easy use in either the field or laboratory. Although the
-        test was developed for use in suspect cases of human inhalation anthrax, its
-        features also make it a potentially powerful tool for testing suspect animal
-        cases. We tested animal tissue samples that were confirmed or ruled out for
-        B. anthracis. The AAD Rapid Tests were also deployed in the field, testing
-        animal carcasses during an anthrax outbreak in hippopotami (Hippopotamus amphibius)
-        and Cape buffalo (Syncerus caffer) in Namibia. Evaluation of all samples showed
-        a specificity of 82% and sensitivity of 98%. However, when the assay was used
-        on specimens from only fresh carcasses (dead for less than 24 hours), the
-        specificity increased to 96%. The AAD Rapid Test is a rapid and simple screening
-        assay, but confirmatory testing needs to be done, especially when the age
-        of the sample (days animal has been deceased) is unknown. This article is
-        protected by copyright. All rights reserved.","url":"https://www.ncbi.nlm.nih.gov/pubmed/30776143","doi":"10.1111/lam.13134"}},{"id":"28","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
-        D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
-        time-reversal approach to clinical trial placebo response and the relationship
-        to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
-        data:Placebo:Placebo effect:Randomized clinical trial:Seizure diary:Simulation:Statistics","abstract":"PURPOSE:
-        Clinical epilepsy drug trials have been measuring increasingly high placebo
-        response rates, up to 40%. This study was designed to examine the relationship
-        between the natural variability in epilepsy, and the placebo response seen
-        in trials. We tested the hypothesis that ''reversing'' trial direction, with
-        the baseline period as the treatment observation phase, would reveal effects
-        of natural variability. METHOD: Clinical trial simulations were run with time
-        running forward and in reverse. Data sources were: SeizureTracker.com (patient
-        reported diaries), a randomized sham-controlled TMS trial, and chronically
-        implanted intracranial EEG electrodes. Outcomes were 50%-responder rates (RR50)
-        and median percentage change (MPC). RESULTS: The RR50 results showed evidence
-        that temporal reversal does not prevent large responder rates across datasets.
-        The MPC results negative in the TMS dataset, and positive in the other two.
-        CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
-        natural variability of epilepsy as a substrate across multiple datasets. Therefore,
-        the placebo response in epilepsy clinical trials may be attributable almost
-        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"29","type":"article","attributes":{"article_id":"1775","author":"Lindsey,
-        N. P. M., S. W.;Staples, J. E.;Fischer, M.","title":"Notes from the field:
-        Multistate outbreak of Eastern equine encephalitis virus - United States,
-        2019","year":"2020","date":"17-01","isbn_issn":"0149-2195","keywords":null,"abstract":null,"url":"https://www.ncbi.nlm.nih.gov/pubmed/31945032","doi":"10.15585/mmwr.mm6902a4"}},{"id":"31","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
-        D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
-        time-reversal approach to clinical trial placebo response and the relationship
-        to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
-        data:Placebo:Placebo effect:Randomized clinical trial:Seizure diary:Simulation:Statistics","abstract":"PURPOSE:
-        Clinical epilepsy drug trials have been measuring increasingly high placebo
-        response rates, up to 40%. This study was designed to examine the relationship
-        between the natural variability in epilepsy, and the placebo response seen
-        in trials. We tested the hypothesis that ''reversing'' trial direction, with
-        the baseline period as the treatment observation phase, would reveal effects
-        of natural variability. METHOD: Clinical trial simulations were run with time
-        running forward and in reverse. Data sources were: SeizureTracker.com (patient
-        reported diaries), a randomized sham-controlled TMS trial, and chronically
-        implanted intracranial EEG electrodes. Outcomes were 50%-responder rates (RR50)
-        and median percentage change (MPC). RESULTS: The RR50 results showed evidence
-        that temporal reversal does not prevent large responder rates across datasets.
-        The MPC results negative in the TMS dataset, and positive in the other two.
-        CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
-        natural variability of epilepsy as a substrate across multiple datasets. Therefore,
-        the placebo response in epilepsy clinical trials may be attributable almost
-        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"32","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
-        D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
-        time-reversal approach to clinical trial placebo response and the relationship
-        to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
-        data:Placebo:Placebo effect:Randomized clinical trial:Seizure diary:Simulation:Statistics","abstract":"PURPOSE:
-        Clinical epilepsy drug trials have been measuring increasingly high placebo
-        response rates, up to 40%. This study was designed to examine the relationship
-        between the natural variability in epilepsy, and the placebo response seen
-        in trials. We tested the hypothesis that ''reversing'' trial direction, with
-        the baseline period as the treatment observation phase, would reveal effects
-        of natural variability. METHOD: Clinical trial simulations were run with time
-        running forward and in reverse. Data sources were: SeizureTracker.com (patient
-        reported diaries), a randomized sham-controlled TMS trial, and chronically
-        implanted intracranial EEG electrodes. Outcomes were 50%-responder rates (RR50)
-        and median percentage change (MPC). RESULTS: The RR50 results showed evidence
-        that temporal reversal does not prevent large responder rates across datasets.
-        The MPC results negative in the TMS dataset, and positive in the other two.
-        CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
-        natural variability of epilepsy as a substrate across multiple datasets. Therefore,
-        the placebo response in epilepsy clinical trials may be attributable almost
-        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"33","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
-        D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
-        time-reversal approach to clinical trial placebo response and the relationship
-        to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
-        data:Placebo:Placebo effect:Randomized clinical trial:Seizure diary:Simulation:Statistics","abstract":"PURPOSE:
-        Clinical epilepsy drug trials have been measuring increasingly high placebo
-        response rates, up to 40%. This study was designed to examine the relationship
-        between the natural variability in epilepsy, and the placebo response seen
-        in trials. We tested the hypothesis that ''reversing'' trial direction, with
-        the baseline period as the treatment observation phase, would reveal effects
-        of natural variability. METHOD: Clinical trial simulations were run with time
-        running forward and in reverse. Data sources were: SeizureTracker.com (patient
-        reported diaries), a randomized sham-controlled TMS trial, and chronically
-        implanted intracranial EEG electrodes. Outcomes were 50%-responder rates (RR50)
-        and median percentage change (MPC). RESULTS: The RR50 results showed evidence
-        that temporal reversal does not prevent large responder rates across datasets.
-        The MPC results negative in the TMS dataset, and positive in the other two.
-        CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
-        natural variability of epilepsy as a substrate across multiple datasets. Therefore,
-        the placebo response in epilepsy clinical trials may be attributable almost
-        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"34","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
-        D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
-        time-reversal approach to clinical trial placebo response and the relationship
-        to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
-        data:Placebo:Placebo effect:Randomized clinical trial:Seizure diary:Simulation:Statistics","abstract":"PURPOSE:
-        Clinical epilepsy drug trials have been measuring increasingly high placebo
-        response rates, up to 40%. This study was designed to examine the relationship
-        between the natural variability in epilepsy, and the placebo response seen
-        in trials. We tested the hypothesis that ''reversing'' trial direction, with
-        the baseline period as the treatment observation phase, would reveal effects
-        of natural variability. METHOD: Clinical trial simulations were run with time
-        running forward and in reverse. Data sources were: SeizureTracker.com (patient
-        reported diaries), a randomized sham-controlled TMS trial, and chronically
-        implanted intracranial EEG electrodes. Outcomes were 50%-responder rates (RR50)
-        and median percentage change (MPC). RESULTS: The RR50 results showed evidence
-        that temporal reversal does not prevent large responder rates across datasets.
-        The MPC results negative in the TMS dataset, and positive in the other two.
-        CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
-        natural variability of epilepsy as a substrate across multiple datasets. Therefore,
-        the placebo response in epilepsy clinical trials may be attributable almost
-        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"35","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
-        D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
-        time-reversal approach to clinical trial placebo response and the relationship
-        to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
-        data:Placebo:Placebo effect:Randomized clinical trial:Seizure diary:Simulation:Statistics","abstract":"PURPOSE:
-        Clinical epilepsy drug trials have been measuring increasingly high placebo
-        response rates, up to 40%. This study was designed to examine the relationship
-        between the natural variability in epilepsy, and the placebo response seen
-        in trials. We tested the hypothesis that ''reversing'' trial direction, with
-        the baseline period as the treatment observation phase, would reveal effects
-        of natural variability. METHOD: Clinical trial simulations were run with time
-        running forward and in reverse. Data sources were: SeizureTracker.com (patient
-        reported diaries), a randomized sham-controlled TMS trial, and chronically
-        implanted intracranial EEG electrodes. Outcomes were 50%-responder rates (RR50)
-        and median percentage change (MPC). RESULTS: The RR50 results showed evidence
-        that temporal reversal does not prevent large responder rates across datasets.
-        The MPC results negative in the TMS dataset, and positive in the other two.
-        CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
-        natural variability of epilepsy as a substrate across multiple datasets. Therefore,
-        the placebo response in epilepsy clinical trials may be attributable almost
-        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"36","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
+      string: '{"data":[{"id":"36","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
         D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
         time-reversal approach to clinical trial placebo response and the relationship
         to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
@@ -268,26 +123,6 @@ http_interactions:
         natural variability of epilepsy as a substrate across multiple datasets. Therefore,
         the placebo response in epilepsy clinical trials may be attributable almost
         entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"40","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
-        D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
-        time-reversal approach to clinical trial placebo response and the relationship
-        to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
-        data:Placebo:Placebo effect:Randomized clinical trial:Seizure diary:Simulation:Statistics","abstract":"PURPOSE:
-        Clinical epilepsy drug trials have been measuring increasingly high placebo
-        response rates, up to 40%. This study was designed to examine the relationship
-        between the natural variability in epilepsy, and the placebo response seen
-        in trials. We tested the hypothesis that ''reversing'' trial direction, with
-        the baseline period as the treatment observation phase, would reveal effects
-        of natural variability. METHOD: Clinical trial simulations were run with time
-        running forward and in reverse. Data sources were: SeizureTracker.com (patient
-        reported diaries), a randomized sham-controlled TMS trial, and chronically
-        implanted intracranial EEG electrodes. Outcomes were 50%-responder rates (RR50)
-        and median percentage change (MPC). RESULTS: The RR50 results showed evidence
-        that temporal reversal does not prevent large responder rates across datasets.
-        The MPC results negative in the TMS dataset, and positive in the other two.
-        CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
-        natural variability of epilepsy as a substrate across multiple datasets. Therefore,
-        the placebo response in epilepsy clinical trials may be attributable almost
-        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"41","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
         D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
         time-reversal approach to clinical trial placebo response and the relationship
         to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
@@ -647,6 +482,75 @@ http_interactions:
         CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
         natural variability of epilepsy as a substrate across multiple datasets. Therefore,
         the placebo response in epilepsy clinical trials may be attributable almost
-        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}}]}'
-  recorded_at: Wed, 11 Jan 2023 21:23:32 GMT
+        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"59","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
+        D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
+        time-reversal approach to clinical trial placebo response and the relationship
+        to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
+        data:Placebo:Placebo effect:Randomized clinical trial:Seizure diary:Simulation:Statistics","abstract":"PURPOSE:
+        Clinical epilepsy drug trials have been measuring increasingly high placebo
+        response rates, up to 40%. This study was designed to examine the relationship
+        between the natural variability in epilepsy, and the placebo response seen
+        in trials. We tested the hypothesis that ''reversing'' trial direction, with
+        the baseline period as the treatment observation phase, would reveal effects
+        of natural variability. METHOD: Clinical trial simulations were run with time
+        running forward and in reverse. Data sources were: SeizureTracker.com (patient
+        reported diaries), a randomized sham-controlled TMS trial, and chronically
+        implanted intracranial EEG electrodes. Outcomes were 50%-responder rates (RR50)
+        and median percentage change (MPC). RESULTS: The RR50 results showed evidence
+        that temporal reversal does not prevent large responder rates across datasets.
+        The MPC results negative in the TMS dataset, and positive in the other two.
+        CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
+        natural variability of epilepsy as a substrate across multiple datasets. Therefore,
+        the placebo response in epilepsy clinical trials may be attributable almost
+        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"60","type":"article","attributes":{"article_id":"301","author":"Barrera,
+        R. A., M.,  Acevedo, V.,  Beltran, M.,  Munoz, J. L.,","title":"A comparison
+        of mosquito densities, weather and infection rates of Aedes aegypti during
+        the first epidemics of Chikungunya (2014) and Zika (2016) in areas with and
+        without vector control in Puerto Rico","year":"2018","date":"17-09","isbn_issn":"0269-283x","keywords":"Aedes
+        aegypti: Chikungunya: Zika: dengue: mosquito control","abstract":"In Puerto
+        Rico, the first records of the transmission of Chikungunya (CHIKV) and Zika
+        (ZIKV) viruses were confirmed in May 2014 and December 2015, respectively.
+        Transmission of CHIKV peaked in September 2014, whereas that of ZIKV peaked
+        in August 2016. The emergence of these mosquito-transmitted arboviruses in
+        the context of a lack of human population immunity allowed observations of
+        whether the outbreaks were associated with Aedes aegypti (Diptera: Culicidae)
+        densities and weather. Mosquito density was monitored weekly in four communities
+        using sentinel autocidal gravid ovitraps (AGO traps) during 2016 in order
+        to provide data to be compared with the findings of a previous study carried
+        out during the 2014 CHIKV epidemic. Findings in two communities protected
+        against Ae. aegypti using mass AGO trapping (three traps per house in most
+        houses) were compared with those in two nearby communities without vector
+        control. Mosquito pools were collected to detect viral RNA of ZIKV, CHIKV
+        and dengue virus. In areas without vector control, mosquito densities and
+        rates of ZIKV detection in 2016 were significantly higher, similarly to those
+        observed for CHIKV in 2014. The density of Ae. aegypti in treated sites was
+        less than two females/trap/week, which is similar to the putative adult female
+        threshold for CHIKV transmission. No significant differences in mosquito density
+        or infection rates with ZIKV and CHIKV at the same sites between years were
+        observed. Although 2016 was significantly wetter, mosquito densities were
+        similar.","url":"https://www.ncbi.nlm.nih.gov/pubmed/30225842","doi":"10.1111/mve.12338"}},{"id":"61","type":"article","attributes":{"article_id":"1219","author":"Song,
+        G. R., H. S., Pan, J., Ramos, P., Yoon, K. J., Medina, F. A., Lee, E. M.,
+        Eichinger, D. J., Ming, G. L., Munoz-Jordan, J. L., Tang, H., Pino, I., Song,
+        H., Qian, J., Zhu, H.,","title":"Multiplexed biomarker panels discriminate
+        Zika and Dengue virus infection in humans","year":"2017","date":"15-11","isbn_issn":"1535-9476","keywords":"Array
+        analysis:Biomarker: Diagnostic:Clinical proteomics:Dengue virus:Infectious
+        disease:Protein array:Zika virus","abstract":"Zika virus (ZIKV) and dengue
+        virus (DENV) are closely related flaviviruses that cause widespread, acute
+        febrile illnesses, notably microcephaly for fetuses of infected pregnant women.
+        Detecting the viral cause of these illnesses is paramount to determine risks
+        to patients, counsel pregnant women, and help fight outbreaks. A combined
+        diagnostic algorithm for ZIKV and DENV requires Reverse transcription polymerase
+        chain reaction (RT-PCR) and IgM antibody detection. RT-PCR differentiates
+        between DENV and ZIKV infections during the acute phases of infection, but
+        differentiation based on IgM antibodies is currently nearly impossible in
+        endemic areas. We have developed a ZIKV/DENV protein array and tested it with
+        serum samples collected from ZIKV- and DENV-infected patients and healthy
+        subjects in Puerto Rico. Our analyses reveal a biomarker panel that are capable
+        of discriminating ZIKV and DENV infections with high accuracy, including Capsid
+        protein from African ZIKV strain MR766, and other 5 pair of proteins (NS1,
+        NS2A, NS3, NS4B and NS5) from ZIKV and DENV respectively. Both sensitivity
+        and specificity of the test for ZIKV from DENV are around 90%. We propose
+        that the ZIKV/DENV protein array will be used in future studies to discriminate
+        patients infected with ZIKV from DENV.","url":"http://www.ncbi.nlm.nih.gov/pubmed/29141913","doi":"10.1074/mcp.RA117.000310"}}]}'
+  recorded_at: Wed, 11 Jan 2023 21:54:55 GMT
 recorded_with: VCR 6.1.0
