@@ -45,5 +45,4 @@ class EpitracService
   def self.delete(article_id)
     delete_url("/api/v1/user_articles/#{article_id}")
   end
-
 end

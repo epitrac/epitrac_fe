@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 10 Jan 2023 01:25:28 GMT
+      - Wed, 11 Jan 2023 18:21:11 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - ce413254-95f0-4cbf-88fe-d98219970094
+      - 6b0f9069-04ab-4726-a5e7-184175e52fdd
       X-Runtime:
-      - '0.003638'
+      - '0.008356'
+      Vary:
+      - Origin
       Transfer-Encoding:
       - chunked
       Via:
@@ -46,7 +48,7 @@ http_interactions:
         domestic and wild animals around the world. People can get sick with anthrax
         if they come in contact with infected animals or contaminated animal products.
         Anthrax can cause severe illness in both humans and animals.","link":"https://www.cdc.gov/anthrax/"}}]}'
-  recorded_at: Tue, 10 Jan 2023 01:25:28 GMT
+  recorded_at: Wed, 11 Jan 2023 18:21:12 GMT
 - request:
     method: get
     uri: https://epitrac-be.herokuapp.com/api/v1/disease_info?disease=Anthrax
@@ -68,7 +70,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Tue, 10 Jan 2023 01:25:28 GMT
+      - Wed, 11 Jan 2023 18:21:12 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -78,9 +80,11 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - b88a34b1-cdca-4b65-ac38-2c40d308d27c
+      - 1f9c833e-83b7-4602-b3c1-c745f24f20fa
       X-Runtime:
-      - '0.003684'
+      - '0.003787'
+      Vary:
+      - Origin
       Transfer-Encoding:
       - chunked
       Via:
@@ -93,5 +97,5 @@ http_interactions:
         domestic and wild animals around the world. People can get sick with anthrax
         if they come in contact with infected animals or contaminated animal products.
         Anthrax can cause severe illness in both humans and animals.","link":"https://www.cdc.gov/anthrax/"}}]}'
-  recorded_at: Tue, 10 Jan 2023 01:25:28 GMT
+  recorded_at: Wed, 11 Jan 2023 18:21:12 GMT
 recorded_with: VCR 6.1.0

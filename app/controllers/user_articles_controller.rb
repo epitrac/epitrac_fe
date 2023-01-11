@@ -1,9 +1,4 @@
 class UserArticlesController < ApplicationController
-  def index  
-    @user = User.find(session[:user_id])
-    @saved_articles = UserArticleFacade.view_saved(@user.id)
-  end
-
 
   def create
     @user = User.find(session[:user_id])

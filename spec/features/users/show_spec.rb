@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'users show page' do
+RSpec.describe 'users show page', :vcr do
   before :each do
     visit root_path
       
@@ -13,7 +13,7 @@ RSpec.describe 'users show page' do
   it 'shows user information' do
     visit '/dashboard'
 
-    expect(page).to have_content("Spongebob Squarepants Dashboard")
+    expect(page).to have_content("Spongebobs Squarepants's Dashboard")
   end
 
   it 'shows the user email' do

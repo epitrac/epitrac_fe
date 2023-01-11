@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?article_id=5&user_id=1
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Wed, 11 Jan 2023 18:21:21 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"52b78109f2f5ccfe51bd05e7b874ecff"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bc2e5fce-846c-44e8-9e81-1b6ae1d6e63e
+      X-Runtime:
+      - '0.006444'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"28","type":"user_article","attributes":{"user_id":1,"article_id":5}}}'
+  recorded_at: Wed, 11 Jan 2023 18:21:21 GMT
+recorded_with: VCR 6.1.0
