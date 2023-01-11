@@ -22,4 +22,8 @@ class EpitracService
   def self.disease_info(disease)
     get_url("/api/v1/disease_info?disease=#{disease}")
   end
+
+  def self.all_disease_info
+    get_url("/api/v1/disease_info")
+  end
 end
