@@ -15,9 +15,18 @@
   </div>
 </div>
 <br>
-<h3 style="text-align:left"><%= @user.name %> Saved Articles</h3>
-<%=@saved_articles%>
-<hr>
+<h3 style="text-align:left"><%= @user.name %>'s Saved Articles</h3>
+<%@saved_articles.each do |article|%>
+  <p><strong>Title: </strong><%=article[:attributes][:title]%></p>
+  <p><strong>Authors: </strong><%=article[:attributes][:author]%></p>
+  <p><strong>Publication Date: </strong><%=article[:attributes][:date]%>, <%=article[:attributes][:year]%></p>
+  <p><strong>DOI: </strong><%=article[:attributes][:doi]%></p>
+  <p><strong>ISBN_ISSN: </strong><%=article[:attributes][:isbn_issn]%></p>
+  <p><strong>URL: </strong><a href=<%= article[:attributes][:url] %>><%=article[:attributes][:url]%></a></p>
+  <p><strong>Abstract: </strong><%=article[:attributes][:abstract]%></p>
+  <hr>
+<%end%>
+
 
 <footer class="page-footer font-small special-color-dark pt-4">
   <br>
