@@ -46,13 +46,13 @@ RSpec.describe 'users show page', :vcr do
     visit '/'
     click_link 'Articles'
     click_link 'Find Anthrax Articles'
-    # require "pry"; binding.pry
+    
     click_button('Save to Dashboard', match: :first)
     expect(page).to have_content('Title: Detection of Bacillus anthracis in animal tissues using InBios Active Anthrax Detect Rapid Test lateral flow immunoassay')
     expect(page).to have_content('Total Number of Saved Articles: 24')
     expect(page).to have_button('Delete Article From Dashboard')
 
-    #cannot get this to work with VCR currently
+    
     click_button('Delete Article From Dashboard', match: :first)
     expect(page).to have_content('Total Number of Saved Articles: 23')
   end
