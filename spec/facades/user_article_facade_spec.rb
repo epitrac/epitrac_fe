@@ -1,9 +1,21 @@
 # require 'rails_helper'
 #
 # RSpec.describe UserArticleFacade do
-#   describe 'class methods', :vcr do
-#     describe '#user_articles' do
-#       it 'returns articles on given topic' do
+#   describe 'class methods' do
+#     describe '#save_to_dashboard' do
+#       before :each do
+#         ActiveRecord::Base.connection.reset_pk_sequence!('users')
+#
+#         visit root_path
+#
+#         expect(page).to have_button("Login with Google")
+#         click_on "Login with Google"
+#
+#         Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
+#       end
+#
+#       it 'allows users to save articles to their dashboard' do
+#         visit '/'
 #         expect(UserArticlesFacade.user_articles("Anthrax")).to be_an(Array)
 #         expect(ArticlesFacade.articles_on_topic("Anthrax")[0]).to be_instance_of(Article)
 #
@@ -21,5 +33,6 @@
 #         expect(article.year).to eq("2019")
 #       end
 #     end
+#     it ''
 #   end
 # end
