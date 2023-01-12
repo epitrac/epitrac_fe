@@ -41,6 +41,7 @@ You can access the front-end [deployed application](https://epitrac.herokuapp.co
 2. cd into the root directory
 3. Install gem packages: `bundle install`
 4. Setup the database: `rails db:{create,migrate}`
+5. To run local RSpec test suite: `bundle exec rspec`
 
 ### Google OAuth 2
 EpiTrac uses Google OAuth 2 to login users. In order to access this feature locally, you must follow the steps below to setup a new Google OAuth project. A client needs a client_id and client_secret from the OAuth provider for their application.
