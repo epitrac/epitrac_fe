@@ -9,7 +9,7 @@
 - [Learning Goals](#learning-goals)
 - [Setup](#setup)
 - [Contributors](#contributors)
-- [Gems](#gems)
+- [Gems and Tech Stack](#gems-and-tech-stack)
 - [Illistrations](#illistrations)
 
 
@@ -30,8 +30,10 @@ You can access the front-end [deployed application](https://epitrac.herokuapp.co
 ## Learning Goals
 [Project Spec](https://backend.turing.edu/module3/projects/consultancy/)
 
-This project's goal is creating a successful web application from a student-led project idea, focusing on Service-Oriented Architecture with separate front and back end applications.
-The front-end handles authentication via Google OAuth 2.
+- Design a project from scratch using a student-led idea.
+- Use Service-Oriented Architecture with separate front and back end applications.
+- Implement Bootstap and JavaScript for app styling and map functionality.
+- Authenticate users with an OAuth provider
 
 ## Setup
 
@@ -39,6 +41,25 @@ The front-end handles authentication via Google OAuth 2.
 2. cd into the root directory
 3. Install gem packages: `bundle install`
 4. Setup the database: `rails db:{create,migrate}`
+
+### Google OAuth 2
+EpiTrac uses Google OAuth 2 to login users. In order to access this feature locally, you must follow the steps below to setup a new Google OAuth project. A client needs a client_id and client_secret from the OAuth provider for their application.
+
+1. Open Google API Console Credentials page [HERE](https://console.developers.google.com)
+2. Create a new project or use an existing one
+3. Select "OAuth Consent Screen"
+4. Enter your application name, email, and either a deployed link or for local development: http://localhost:3000
+5. Select scopes desired (we used only non-sensitive scopes) & submit
+6. For the Authorized Redirect URIs, select "Credentials" in the menu bar and choose your project. Enter the following URL for local development: http://localhost:3000/auth/google_oauth2/callback
+7. Click Save/Create
+8. Navigate to the EpiTrac front-end in terminal `cd epitrac_fe`
+9. While in terminal run `bundle exec figaro install` (this will create a file to make environment variables)
+10. In the `config/application.yml` enter your client_id and client_secret provided by Google as shown below.
+```yml
+    GOOGLE_CLIENT_ID: YOUR_CLIENT_ID
+    GOOGLE_CLIENT_SECRET: YOUR_CLIENT_SECRET
+ ```
+11. You are ready to use Google OAuth 2!
 
 ## Contributors
 <table>
@@ -73,7 +94,7 @@ The front-end handles authentication via Google OAuth 2.
   </tr>
 </table>
 
-## Gems
+## Gems and Tech Stack
 - Pry
 - RSpec
 - Capybara
@@ -85,29 +106,37 @@ The front-end handles authentication via Google OAuth 2.
 - Faker
 - Factory Bot
 
+![EpiTrac tech stack](https://user-images.githubusercontent.com/60988144/212101901-5ab0e9bd-9b0a-45b1-8e75-a25adb8ccc22.jpg)
+
 ## Illistrations
 [Deployed Link](https://epitrac.herokuapp.com/)
 
 - Home page
+
 ![Home page](https://user-images.githubusercontent.com/60988144/211964610-35f20c72-de80-439a-b974-3608804c1ac2.png)
 
 - Clicking on a pin reveals case data for that state
 - Diseases link to the about section for that disease
+
 ![State Pin Clicked](https://user-images.githubusercontent.com/60988144/211964614-95607ee4-0be9-4a73-a773-80547a0ab603.png)
 
 - The about page contains information about the creator, application, and diseases
+
 ![About page](https://user-images.githubusercontent.com/60988144/211963577-0d354273-6c2c-4ed1-b252-c6797c932a87.png)
 
 - The about page contains a section for disease surveilled
 - Users can find articles for that specific disease by clicking "Find articles for <disease>"
+
 ![Diseases surveilled](https://user-images.githubusercontent.com/60988144/211963581-83e694bb-119f-4a18-9d2c-85aca334de0b.png)
 
 - The articles page displays many articles relating to the disease topic
 - If a user is logged in, there is a feature to save articles to their dashboard
+
 ![Articles page](https://user-images.githubusercontent.com/60988144/211963583-6cf9d6a8-58e0-4100-abee-c76187ab8d7c.png)
 
 - The users dashboard contains information about the user, including state. When a user is logged in and has selected their home state, the home page will automatically populate with case data for thier state
 - The user has access to all the articles they saved and can delete articles on their dashboard
+
 ![User Dashboard](https://user-images.githubusercontent.com/60988144/211964297-6d65e949-c8ef-448a-99f5-10a4ba3c3e7c.png)
 
 
