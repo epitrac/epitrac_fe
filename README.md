@@ -18,7 +18,9 @@ EpiTrac is an application that enables users to access epidemiological data on a
 
 This repo is the front-end part of a project built by students at [Turing School of Software and Design](https://turing.edu/). You can find the back-end repo [HERE](https://github.com/epitrac/epitrac_be).
 
-You can access the front-end [deployed application](https://epitrac.herokuapp.com/) here. 
+You can access the front-end [deployed application](https://epitrac.herokuapp.com/) here.
+
+A demo walk-through of the application features is available [HERE](https://youtu.be/hZvGZcxO_1M) and presentation materials [HERE](https://docs.google.com/presentation/d/1AWgleCY4x2FnG9d7KzMpJZ2tPFZnXMt4zR4-Iq8WRk4/edit?usp=sharing).
 
 ## Built With
 - Rails 5.2.8
