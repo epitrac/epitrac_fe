@@ -1,9 +1,12 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find(session[:user_id])
-    # @saved_articles = UserArticleFacade.view_saved(session[:user_id])
-    @saved_articles = UserArticleFacade.user_articles(session[:user_id])
-
+    if current_user
+      @user = User.find(session[:user_id])
+      @saved_articles = UserArticleFacade.user_articles(session[:user_id])
+    else
+      redirect_to root_path
+      flash[:error] = "Please login to view your dashboard."
+    end
   end
 
   def destroy
@@ -14,7 +17,12 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find(session[:user_id])
+    if current_user
+      @user = User.find(session[:user_id])
+    else
+      redirect_to root_path
+      flash[:error] = "Please login to edit your state."
+    end
   end
 
   def update
