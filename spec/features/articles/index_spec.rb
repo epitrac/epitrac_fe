@@ -17,5 +17,14 @@ RSpec.describe 'articles page', :vcr do
       expect(page).to have_content("Title: Detection of Bacillus anthracis in animal tissues using InBios Active Anthrax Detect Rapid Test lateral flow immunoassay")
       expect(page).to have_link("https://www.ncbi.nlm.nih.gov/pubmed/30776143")
     end
+
+    it 'logged out user cant save article ' do
+      visit root_path
+
+      click_on "Articles"
+      click_link "Find Anthrax Articles"
+
+      expect(page).to_not have_content("Save to Dashboard")
+    end
   end
 end
