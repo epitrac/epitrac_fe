@@ -10,13 +10,15 @@
 - [Setup](#setup)
 - [Contributors](#contributors)
 - [Gems](#gems)
+- [Illistrations](#illistrations)
 
 
 ## Project Overview
 EpiTrac is an application that enables users to access epidemiological data on a user friendly interactive map that displays weekly disease cases for each state. Users can also find information about the disease, articles, and access to more informational resources. 
 
-This repo is the Front End part of a project built by students at [Turing School of Software and Design](https://turing.edu/). You can find the Back End repo [HERE](https://github.com/epitrac/epitrac_be).
+This repo is the front-end part of a project built by students at [Turing School of Software and Design](https://turing.edu/). You can find the back-end repo [HERE](https://github.com/epitrac/epitrac_be).
 
+You can access the front-end [deployed application](https://epitrac.herokuapp.com/) here. 
 
 ## Built With
 - Rails 5.2.8
@@ -37,7 +39,6 @@ The front-end handles authentication via Google OAuth 2.
 2. cd into the root directory
 3. Install gem packages: `bundle install`
 4. Setup the database: `rails db:{create,migrate}`
-5. Seed the database: `rails csv_load:diseases`
 
 ## Contributors
 <table>
@@ -84,10 +85,6 @@ The front-end handles authentication via Google OAuth 2.
 - Faker
 - Factory Bot
 
-## Known Issues/Future Goals
-Future features could include:
-- WIP
-
 ## Illistrations
 [Deployed Link](https://epitrac.herokuapp.com/)
 
@@ -114,3 +111,8 @@ Future features could include:
 ![User Dashboard](https://user-images.githubusercontent.com/60988144/211964297-6d65e949-c8ef-448a-99f5-10a4ba3c3e7c.png)
 
 
+## Known Issues/Future Goals
+Future features could include:
+- Deleting all articles from the user dashboard
+- Enhanced testing
+- Advanced filtering options
