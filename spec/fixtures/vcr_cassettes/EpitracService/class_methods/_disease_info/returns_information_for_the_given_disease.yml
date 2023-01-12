@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Wed, 11 Jan 2023 21:23:42 GMT
+      - Thu, 12 Jan 2023 00:42:27 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -31,9 +31,9 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - f8ddc187-ce11-4a3b-90fb-d8e6899b71ae
+      - 44a901e5-272d-4f8c-9ec4-716ef038286b
       X-Runtime:
-      - '0.003888'
+      - '0.003993'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -48,5 +48,5 @@ http_interactions:
         domestic and wild animals around the world. People can get sick with anthrax
         if they come in contact with infected animals or contaminated animal products.
         Anthrax can cause severe illness in both humans and animals.","link":"https://www.cdc.gov/anthrax/"}}]}'
-  recorded_at: Wed, 11 Jan 2023 21:23:42 GMT
+  recorded_at: Thu, 12 Jan 2023 00:42:27 GMT
 recorded_with: VCR 6.1.0

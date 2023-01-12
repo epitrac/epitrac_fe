@@ -41,7 +41,7 @@ RSpec.describe EpitracService do
         expect(article[:attributes][:doi]).to be_a(String)
       end
     end
-    
+
     describe '#all_states_cases' do
       it 'finds all stats disease cases for the week' do
         states_cases = EpitracService.all_states_cases
@@ -49,7 +49,7 @@ RSpec.describe EpitracService do
         expect(states_cases).to be_a(Hash)
         expect(states_cases[:data]).to be_an(Array)
         state_case = states_cases[:data][0]
-        
+
         expect(state_case[:attributes]).to have_key(:state)
         expect(state_case[:attributes][:state]).to be_a(String)
 
@@ -86,7 +86,7 @@ RSpec.describe EpitracService do
         expect(state_cases).to be_a(Hash)
         expect(state_cases[:data]).to be_an(Array)
         state_case = state_cases[:data][0]
-        
+
         expect(state_case[:attributes]).to have_key(:state)
         expect(state_case[:attributes][:state]).to be_a(String)
 
@@ -160,20 +160,47 @@ RSpec.describe EpitracService do
       end
     end
 
-    describe '#save_article' do 
-      it 'saves an article to user_article api' do 
+    describe '#save_article' do
+      it 'saves an article to user_article api' do
         article = EpitracService.save_article(1, 5)
         expect(article).to be_a(Hash)
         expect(article[:data]).to be_an(Hash)
-        
+
         expect(article[:data]).to have_key(:id)
-        expect(article[:data][:id]).to be_a String 
+        expect(article[:data][:id]).to be_a String
 
         expect(article[:data][:attributes]).to have_key(:user_id)
-        expect(article[:data][:attributes][:user_id]).to be_an Integer 
+        expect(article[:data][:attributes][:user_id]).to be_an Integer
 
         expect(article[:data][:attributes]).to have_key(:article_id)
-        expect(article[:data][:attributes][:article_id]).to be_an Integer 
+        expect(article[:data][:attributes][:article_id]).to be_an Integer
+      end
+    end
+
+    describe '#user_articles' do
+      it 'returns a user\'s saved articles' do
+        EpitracService.save_article(101, 5)
+        EpitracService.save_article(101, 6)
+
+        user_articles = EpitracService.return_saved_articles(101)[:data]
+        expect(user_articles).to be_an(Array)
+        expect(user_articles.size).to eq(2)
+      end
+    end
+
+    describe '#delete' do
+      it 'deletes a user\'s saved articles' do
+        user_articles = EpitracService.return_saved_articles(101)[:data]
+        user_articles[0][:id]
+        user_articles[1][:id]
+
+        EpitracService.delete(user_articles[0][:id])
+
+        expect(EpitracService.return_saved_articles(101)[:data].size).to eq(1)
+
+        EpitracService.delete(user_articles[1][:id])
+
+        expect(EpitracService.return_saved_articles(101)[:data].size).to eq(0)
       end
     end
   end

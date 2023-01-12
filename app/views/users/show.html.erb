@@ -19,14 +19,14 @@
 <hr>
 <p><strong>Total Number of Saved Articles: </strong><%=@saved_articles.count%></p>
 <%@saved_articles.each do |article|%>
-  <p><strong>Title: </strong><%=article[:attributes][:title]%></p>
-  <p><strong>Authors: </strong><%=article[:attributes][:author]%></p>
-  <p><strong>Publication Date: </strong><%=article[:attributes][:date]%>, <%=article[:attributes][:year]%></p>
-  <p><strong>DOI: </strong><%=article[:attributes][:doi]%></p>
-  <p><strong>ISBN_ISSN: </strong><%=article[:attributes][:isbn_issn]%></p>
-  <p><strong>URL: </strong><a href=<%= article[:attributes][:url] %>><%=article[:attributes][:url]%></a></p>
-  <p><strong>Abstract: </strong><%=article[:attributes][:abstract]%></p>
-  <%=button_to "Delete Article From Dashboard", "/user_articles/#{(article[:id])}", method: :delete%>
+  <p><strong>Title: </strong><%=article.title%></p>
+  <p><strong>Authors: </strong><%=article.author%></p>
+  <p><strong>Publication Date: </strong><%=article.date%>, <%=article.year%></p>
+  <p><strong>DOI: </strong><%=article.doi%></p>
+  <p><strong>ISBN_ISSN: </strong><%=article.isbn_issn%></p>
+  <p><strong>URL: </strong><a href=<%= article.url %>><%=article.url%></a></p>
+  <p><strong>Abstract: </strong><%=article.abstract%></p>
+  <%=button_to "Delete Article From Dashboard", "/user_articles/#{article.id}", method: :delete%>
   <hr>
 <%end%>
 
@@ -36,4 +36,3 @@
   <p align="center">This action cannot be undone. Please be sure you want to delete your account.
   <p align="center"><%= link_to "Delete Account", "/dashboard", method: :delete %><p><br>
 </footer>
-

@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   def show
     if current_user
       @user = User.find(session[:user_id])
-      @saved_articles = UserArticleFacade.view_saved(session[:user_id])
+      @saved_articles = UserArticleFacade.user_articles(session[:user_id])
     else
       redirect_to root_path
       flash[:error] = "Please login to view your dashboard."

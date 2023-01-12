@@ -1,0 +1,173 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles/?article_id=5&user_id=101
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 12 Jan 2023 00:42:27 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"dd69e1fd7c155da27b40fd2b1b8d63f4"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bac6238d-757b-433d-b73c-6894d1f00b65
+      X-Runtime:
+      - '0.006490'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"131","type":"user_article","attributes":{"user_id":101,"article_id":5}}}'
+  recorded_at: Thu, 12 Jan 2023 00:42:28 GMT
+- request:
+    method: post
+    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles/?article_id=6&user_id=101
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Content-Length:
+      - '0'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 12 Jan 2023 00:42:28 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"523216f20eeb60906b492d1d518f450f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 1c5e43d7-2e39-4e3d-8036-f049d0fb4871
+      X-Runtime:
+      - '0.007000'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"132","type":"user_article","attributes":{"user_id":101,"article_id":6}}}'
+  recorded_at: Thu, 12 Jan 2023 00:42:28 GMT
+- request:
+    method: get
+    uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=101
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 12 Jan 2023 00:42:28 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - W/"ce39a881afe82d3098bb11207eb61bcd"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ff9bdff4-1993-4585-a70d-865c8fe0e16a
+      X-Runtime:
+      - '0.259691'
+      Vary:
+      - Origin
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"131","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
+        D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
+        time-reversal approach to clinical trial placebo response and the relationship
+        to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
+        data:Placebo:Placebo effect:Randomized clinical trial:Seizure diary:Simulation:Statistics","abstract":"PURPOSE:
+        Clinical epilepsy drug trials have been measuring increasingly high placebo
+        response rates, up to 40%. This study was designed to examine the relationship
+        between the natural variability in epilepsy, and the placebo response seen
+        in trials. We tested the hypothesis that ''reversing'' trial direction, with
+        the baseline period as the treatment observation phase, would reveal effects
+        of natural variability. METHOD: Clinical trial simulations were run with time
+        running forward and in reverse. Data sources were: SeizureTracker.com (patient
+        reported diaries), a randomized sham-controlled TMS trial, and chronically
+        implanted intracranial EEG electrodes. Outcomes were 50%-responder rates (RR50)
+        and median percentage change (MPC). RESULTS: The RR50 results showed evidence
+        that temporal reversal does not prevent large responder rates across datasets.
+        The MPC results negative in the TMS dataset, and positive in the other two.
+        CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
+        natural variability of epilepsy as a substrate across multiple datasets. Therefore,
+        the placebo response in epilepsy clinical trials may be attributable almost
+        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"132","type":"article","attributes":{"article_id":"6","author":"Hall,
+        H. I. S., R., Szwarcwald, C. L., Green, T.,","title":"*Brief report: Time
+        from infection with the human immunodeficiency virus to diagnosis, United
+        States","year":"2015","date":"6-Jan","isbn_issn":"1525-4135","keywords":"Adolescent:Adult:Aged:Diagnostic
+        Tests, Routine/methods/utilization:Female:HIV/*isolation \u0026 purification:HIV
+        Infections/*diagnosis/*transmission:Humans:Male:Middle Aged:Time Factors:United
+        States:Young Adult","abstract":"HIV testing efforts increased in recent years
+        to reduce the percentage of persons with HIV unaware of their infection and
+        to detect HIV early. An analysis of CD4 data from national HIV surveillance
+        indicates that diagnosis delays decreased during 2003-2011; on average, persons
+        diagnosed in 2011 had been infected 5.6 years before their diagnosis compared
+        with 7.0 years among those diagnosed in 2003. Diagnosis delays were longer
+        among females, blacks, Hispanics/Latinos, and older persons, but shorter among
+        men who have sex with men, compared with their counterparts. Continued efforts
+        to implement routine testing can help reduce diagnosis delays.","url":"http://www.ncbi.nlm.nih.gov/pubmed/25714245","doi":"10.1097/qai.0000000000000589"}}]}'
+  recorded_at: Thu, 12 Jan 2023 00:42:28 GMT
+recorded_with: VCR 6.1.0
