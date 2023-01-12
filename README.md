@@ -96,16 +96,17 @@ EpiTrac uses Google OAuth 2 to login users. In order to access this feature loca
 </table>
 
 ## Gems and Tech Stack
-- Pry
-- RSpec
-- Capybara
-- Simplecov
-- Shoulda-Matchers
-- Webmock
-- VCR
-- Faraday
-- Faker
-- Factory Bot
+- [Pry](https://github.com/pry/pry)
+- [RSpec](https://github.com/rspec/rspec-rails)
+- [Capybara](https://github.com/teamcapybara/capybara)
+- [SimpleCov](https://github.com/simplecov-ruby/simplecov)
+- [Shoulda-Matchers](https://github.com/thoughtbot/shoulda-matchers)
+- [Webmock](https://github.com/bblimke/webmock)
+- [VCR](https://github.com/vcr/vcr)
+- [Faraday](https://lostisland.github.io/faraday/usage/)
+- [Faker](https://github.com/vajradog/faker-rails)
+- [Factory Bot](https://github.com/thoughtbot/factory_bot_rails)
+- [OmniAuth Google OAuth2](https://github.com/zquestz/omniauth-google-oauth2)
 
 ![EpiTrac tech stack](https://user-images.githubusercontent.com/60988144/212101901-5ab0e9bd-9b0a-45b1-8e75-a25adb8ccc22.jpg)
 
