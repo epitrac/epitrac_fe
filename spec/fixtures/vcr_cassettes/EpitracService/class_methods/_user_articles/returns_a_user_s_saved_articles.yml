@@ -23,19 +23,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 12 Jan 2023 00:02:24 GMT
+      - Thu, 12 Jan 2023 00:22:28 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"0cf3673d3a14bae4a537ec95a69290ea"
+      - W/"ae0d2e1962c965c232f487274124ccfd"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - d1c885e0-ad67-4d77-b519-7e9a6aedc383
+      - 3249a974-d90f-4b5d-a730-81a33900d457
       X-Runtime:
-      - '0.004931'
+      - '0.004888'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -44,8 +44,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"113","type":"user_article","attributes":{"user_id":101,"article_id":5}}}'
-  recorded_at: Thu, 12 Jan 2023 00:02:25 GMT
+      string: '{"data":{"id":"126","type":"user_article","attributes":{"user_id":101,"article_id":5}}}'
+  recorded_at: Thu, 12 Jan 2023 00:22:28 GMT
 - request:
     method: post
     uri: https://epitrac-be.herokuapp.com/api/v1/user_articles/?article_id=6&user_id=101
@@ -69,19 +69,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 12 Jan 2023 00:02:25 GMT
+      - Thu, 12 Jan 2023 00:22:28 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"71303d063a232706021a3e5a8ac418e8"
+      - W/"adafc25cca97e0e67b843a07f0022668"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7c4455fa-7af4-425f-be61-c8c7dc652a5b
+      - d8e707a6-b07b-4c15-b810-2ab210d6ab9a
       X-Runtime:
-      - '0.005245'
+      - '0.006525'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -90,8 +90,8 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":{"id":"114","type":"user_article","attributes":{"user_id":101,"article_id":6}}}'
-  recorded_at: Thu, 12 Jan 2023 00:02:25 GMT
+      string: '{"data":{"id":"127","type":"user_article","attributes":{"user_id":101,"article_id":6}}}'
+  recorded_at: Thu, 12 Jan 2023 00:22:28 GMT
 - request:
     method: get
     uri: https://epitrac-be.herokuapp.com/api/v1/user_articles?user_id=101
@@ -113,19 +113,19 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 12 Jan 2023 00:02:25 GMT
+      - Thu, 12 Jan 2023 00:22:28 GMT
       Connection:
       - keep-alive
       Content-Type:
       - application/json; charset=utf-8
       Etag:
-      - W/"a02e8b7857826e47713bd9a89a7c8f5d"
+      - W/"9623ee055fb6b188492579307feb9e67"
       Cache-Control:
       - max-age=0, private, must-revalidate
       X-Request-Id:
-      - 7c2fceb5-02c4-4dc1-b4a0-b00912991818
+      - 2cd366a3-c7d7-4a62-99cb-54bd48c3d001
       X-Runtime:
-      - '0.269170'
+      - '0.195140'
       Vary:
       - Origin
       Transfer-Encoding:
@@ -134,7 +134,7 @@ http_interactions:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"data":[{"id":"113","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
+      string: '{"data":[{"id":"126","type":"article","attributes":{"article_id":"5","author":"Goldenholz,
         D. M. S., A., Cook, M., Moss, R., Theodore, W. H.,","title":"A multi-dataset
         time-reversal approach to clinical trial placebo response and the relationship
         to natural variability in epilepsy","year":"2017","date":"23-10","isbn_issn":"1059-1311","keywords":"Big
@@ -154,7 +154,7 @@ http_interactions:
         CONCLUSIONS: Typical RR50s of clinical trials can be reproduced using the
         natural variability of epilepsy as a substrate across multiple datasets. Therefore,
         the placebo response in epilepsy clinical trials may be attributable almost
-        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"114","type":"article","attributes":{"article_id":"6","author":"Hall,
+        entirely to this variability, rather than the \"placebo effect\".","url":"http://www.ncbi.nlm.nih.gov/pubmed/29102709","doi":"10.1016/j.seizure.2017.10.016"}},{"id":"127","type":"article","attributes":{"article_id":"6","author":"Hall,
         H. I. S., R., Szwarcwald, C. L., Green, T.,","title":"*Brief report: Time
         from infection with the human immunodeficiency virus to diagnosis, United
         States","year":"2015","date":"6-Jan","isbn_issn":"1525-4135","keywords":"Adolescent:Adult:Aged:Diagnostic
@@ -169,5 +169,5 @@ http_interactions:
         among females, blacks, Hispanics/Latinos, and older persons, but shorter among
         men who have sex with men, compared with their counterparts. Continued efforts
         to implement routine testing can help reduce diagnosis delays.","url":"http://www.ncbi.nlm.nih.gov/pubmed/25714245","doi":"10.1097/qai.0000000000000589"}}]}'
-  recorded_at: Thu, 12 Jan 2023 00:02:25 GMT
+  recorded_at: Thu, 12 Jan 2023 00:22:29 GMT
 recorded_with: VCR 6.1.0
