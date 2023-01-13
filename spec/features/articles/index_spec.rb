@@ -21,7 +21,7 @@ RSpec.describe 'articles page', :vcr do
     it 'logged out user cant save article ' do
       visit root_path
 
-      click_on "Articles"
+      click_on "Reportable Diseases"
       click_link "Find Anthrax Articles"
 
       expect(page).to_not have_content("Save to Dashboard")

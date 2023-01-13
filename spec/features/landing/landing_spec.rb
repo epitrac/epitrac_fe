@@ -24,9 +24,9 @@ RSpec.describe 'application landing page', :vcr do
     end
 
     it "has a link to article section on about page " do
-      expect(page).to have_link("Articles", href:"/about#diseases")
+      expect(page).to have_link("Reportable Diseases", href:"/about#diseases")
 
-      click_on "Articles"
+      click_on "Reportable Diseases"
       expect(current_path).to eq("/about") 
       expect(page).to have_content("Diseases Surveilled")
     end
