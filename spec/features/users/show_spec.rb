@@ -44,7 +44,7 @@ RSpec.describe 'users show page', :vcr do
     Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:google_oauth2]
 
     visit '/'
-    click_link 'Articles'
+    click_link 'Reportable Diseases'
     click_link 'Find Anthrax Articles'
     
     click_button('Save to Dashboard', match: :first)
