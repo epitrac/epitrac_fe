@@ -12,10 +12,12 @@ RSpec.describe 'articles page', :vcr do
       end
 
       expect(current_path).to eq(articles_path)
-      expect(page).to have_content("Articles for Anthrax")
-      expect(page).to have_content("Total Number of Articles for Anthrax: 19")
-      expect(page).to have_content("Title: Detection of Bacillus anthracis in animal tissues using InBios Active Anthrax Detect Rapid Test lateral flow immunoassay")
-      expect(page).to have_link("https://www.ncbi.nlm.nih.gov/pubmed/30776143")
+      within('#articles') do
+        expect(page).to have_content("Articles for Anthrax")
+        expect(page).to have_content("Total Number of Articles for Anthrax: 19")
+        expect(page).to have_content("Detection of Bacillus anthracis in animal tissues using InBios Active Anthrax Detect Rapid Test lateral flow immunoassay")
+        expect(page).to have_link("https://www.ncbi.nlm.nih.gov/pubmed/30776143")
+      end
     end
 
     it 'logged out user cant save article ' do
