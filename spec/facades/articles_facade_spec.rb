@@ -19,6 +19,7 @@ RSpec.describe ArticlesFacade do
         expect(article.title).to include("Detection of Bacillus anthracis")
         expect(article.url).to eq("https://www.ncbi.nlm.nih.gov/pubmed/30776143")
         expect(article.year).to eq("2019")
+        expect(article.journal).to eq("Lett Appl Microbiol")
       end
     end
   end
