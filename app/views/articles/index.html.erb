@@ -5,7 +5,7 @@
     <div class="column">
       <% @articles.each do |article| %>
         <div class="card" id=<%=article.isbn_issn%>>
-          <div class="container">
+          <div class="container"><br>
             <h2><%= article.title %></h2>
               <p><strong>Authors: </strong><%=article.author%></p>
               <p><strong>Publication Date: </strong><%=article.date%>, <%=article.year%></p>
