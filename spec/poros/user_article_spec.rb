@@ -15,7 +15,8 @@ RSpec.describe UserArticle do
                 "keywords": "Zikv:Zika in pregnancy:pregnancy",
                 "abstract": "An infection with the Zika virus (ZIKV) is usually mild, with nonspecific symptoms and most often asymptomatic.",
                 "url": "https://www.ncbi.nlm.nih.gov/pubmed/29267916",
-                "doi": "10.1093/infdis/jix448"
+                "doi": "10.1093/infdis/jix448",
+                "journal": "Nature"
             }
         }
 
@@ -33,5 +34,6 @@ RSpec.describe UserArticle do
       expect(user_article.doi).to eq("10.1093/infdis/jix448")
       expect(user_article.id).to eq("3")
       expect(user_article.article_id).to eq("30")
+      expect(user_article.journal).to eq("Nature")
   end
 end
