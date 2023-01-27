@@ -11,6 +11,7 @@
               <p><strong>Publication Date: </strong><%=article.date%>, <%=article.year%></p>
               <p><strong>DOI: </strong><%=article.doi%></p>
               <p><strong>ISBN_ISSN: </strong><%=article.isbn_issn%></p>
+              <p><strong>Journal: </strong><%=article.journal%></p>
               <p><strong>URL: </strong><a href=<%= article.url %>><%=article.url%></a></p>
               <p><strong>Abstract: </strong><%=article.abstract%></p>
               <%if session[:user_id]%>
