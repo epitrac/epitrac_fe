@@ -9,7 +9,8 @@ class UserArticle
               :abstract,
               :url,
               :doi,
-              :id
+              :id,
+              :journal
 
   def initialize(data)
     @article_id = data[:attributes][:article_id]
@@ -23,5 +24,6 @@ class UserArticle
     @url = data[:attributes][:url]
     @doi = data[:attributes][:doi]
     @id = data[:id]
+    @journal = data[:attributes][:journal]
   end
 end
