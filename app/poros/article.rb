@@ -8,7 +8,8 @@ class Article
               :keywords,
               :abstract,
               :url,
-              :doi
+              :doi,
+              :journal
 
   def initialize(attributes)
     @id = attributes[:article_id]
@@ -21,5 +22,6 @@ class Article
     @abstract = attributes[:abstract]
     @url = attributes[:url]
     @doi = attributes[:doi]
+    @journal = attributes[:journal]
   end
 end

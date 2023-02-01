@@ -1,20 +1,25 @@
-<h1 align= "center"> Articles for <%=params[:disease]%></h1>
-<br><br>
-<p><h3>Total Number of Articles for <%=params[:disease]%>: <%=@articles.count%></h3></p>
-<br><hr>
-
-<%@articles.each do |article|%>
-<div id=<%=article.isbn_issn%>>
-  <p><strong>Title: </strong><%=article.title%></p>
-  <p><strong>Authors: </strong><%=article.author%></p>
-  <p><strong>Publication Date: </strong><%=article.date%>, <%=article.year%></p>
-  <p><strong>DOI: </strong><%=article.doi%></p>
-  <p><strong>ISBN_ISSN: </strong><%=article.isbn_issn%></p>
-  <p><strong>URL: </strong><a href=<%= article.url %>><%=article.url%></a></p>
-  <p><strong>Abstract: </strong><%=article.abstract%></p>
-  <%if session[:user_id]%>
-    <%=button_to "Save to Dashboard", user_articles_path(params: {article_id: article.id, user_id: session[:user_id]}), method: :post%>
-  <%end%>
-  <br><hr>
+<div id='articles'>
+  <h1 style="text-align:center">Articles for <%=params[:disease]%></h1>
+  <p style="text-align:center">Total Number of Articles for <%=params[:disease]%>: <%=@articles.count%></p>
+  <div class="row">
+    <div class="column">
+      <% @articles.each do |article| %>
+        <div class="card" id=<%=article.isbn_issn%>>
+          <div class="container"><br>
+            <h2><%= article.title %></h2>
+              <p><strong>Authors: </strong><%=article.author%></p>
+              <p><strong>Publication Date: </strong><%=article.date%>, <%=article.year%></p>
+              <p><strong>DOI: </strong><%=article.doi%></p>
+              <p><strong>ISBN_ISSN: </strong><%=article.isbn_issn%></p>
+              <p><strong>Journal: </strong><%=article.journal%></p>
+              <p><strong>URL: </strong><a href=<%= article.url %>><%=article.url%></a></p>
+              <p><strong>Abstract: </strong><%=article.abstract%></p>
+              <%if session[:user_id]%>
+                <%= button_to "Save to Dashboard", user_articles_path(params: {article_id: article.id, user_id: session[:user_id]}), method: :post %><br>
+              <%end%>
+          </div>
+        </div>
+      <% end %>
+    </div>
   </div>
-<%end%>
+</div>

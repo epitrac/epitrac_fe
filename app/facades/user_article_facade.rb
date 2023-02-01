@@ -3,10 +3,6 @@ class UserArticleFacade
     EpitracService.save_article(user_id, article_id)[:data]
   end
 
-  # def self.view_saved(user_id)
-  #   EpitracService.return_saved_articles(user_id)[:data]
-  # end
-
   def self.user_articles(user_id)
     EpitracService.return_saved_articles(user_id)[:data].map do |article_info|
       UserArticle.new(article_info)
